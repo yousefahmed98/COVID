@@ -1,6 +1,8 @@
 <?php
     $PageTitle = "مصر أدها";
     include_once "init.php";
+    
+    
 ?>
         <header>
             <div class="overlay"></div>
@@ -177,6 +179,29 @@
             </div>
         </div>
     </div>
+
+// to get clinet location 
+    <script>
+    (function () {
+    navigator.geolocation.getCurrentPosition(function (position) {
+      var latitude= position.coords.latitude;
+      var longitude=  position.coords.longitude;
+       document.cookie="latitude="+latitude;
+       document.cookie="longitude="+longitude;
+    },
+    function (error) {
+        console.log("The Locator was denied. :(")
+    })
+    })();
+    </script>
+
+    <?php
+        include_once "functions/functions.php";
+        debug(getUserIp());
+        
+    ?>
+
+
 
 <?php
     include_once $gl .'footer.php';
