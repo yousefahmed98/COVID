@@ -1,4 +1,5 @@
 <?php
+    $root = '/';
     $pg = 'Pages/';
     $lang = 'Languages/';
     $gl = 'global/';

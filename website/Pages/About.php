@@ -1,6 +1,6 @@
 <?php
     $PageTitle = "من نحن";
-    include_once "../init.php";
+    include_once 'init.php';
 ?>
 
 <h2>About Us Page</h2>

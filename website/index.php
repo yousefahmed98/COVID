@@ -23,16 +23,25 @@
                 <div class="container-fluid">
                     <div class="container">
                     <!-- Small boxes (Stat box) -->
-                        <div class="row">      
-                            <div class="align-self-center mx-auto">
-                                <h3 style="text-align: center;" class="mb-3">مساعدة طبية</h3>
-                                <div class="btn-group" role="group" aria-label="Basic example">
-                                    <form action="<?php echo $pg. 'healthCheckUp.php'?>" method="get">
-                                        <button type="submit" class="btn btn-outline-success btn-lg mr-2 feelYes" style="margin-right: 10px;">
-                                            <i class="fas fa-thumbs-up"></i><br /> لا أشعر بأعراض</button>
-                                    </form>
-                                    <button type="button" class="btn btn-outline-danger btn-lg ml-2 feelNo" style="margin-right: 10px;" data-target="#Quest" data-toggle="modal">
-                                         <i class="fas fa-thumbs-down"></i><br />أشعر بأعراض</button>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12 col-sm-12 mx-auto">
+                                <div class="text-center">
+                                    <h3 style="text-align: center;" class="mb-3">طمن نفسك</h3>
+                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                        <form action="<?php echo $pg. 'healthCheckUp.php'?>" method="get">
+                                            <button type="submit" class="btn btn-outline-success btn-lg feelYes mr-3">
+                                                <i class="fas fa-thumbs-up"></i><br /> لا أشعر بأعراض</button>
+                                        </form>
+                                        <button type="button" class="btn btn-outline-danger btn-lg feelYes" data-target="#Quest" data-toggle="modal">
+                                            <i class="fas fa-thumbs-down"></i><br />أشعر بأعراض</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12  mx-auto">
+                                <div class="text-center">
+                                    <h3 style="text-align: center;" class="mb-3">تاجر عن بعد</h3>
+                                    <button type="button" class="btn btn-outline-primary btn-lg feelYes" data-target="#Store" data-toggle="modal">
+                                    <i class="fas fa-store"></i><br />مبادرة المتجر</button>
                                 </div>
                             </div>
                         </div>
@@ -51,23 +60,22 @@
                         <br>
                         <div class="row">
                             <div class="card-group">
-                               <div class="card">                            
-                                    <img src="/Images/Whowe.png" class="bd-placeholder-img card-img-top img-circle" alt="...">
+                                <div class="card">                            
+                                    <img src="/images/Whowe.png" class="bd-placeholder-img card-img-top img-circle" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title" style="text-align:center;">من نحن</h5>
                                         <p class="card-text">نحن مجموعه من الاطباء والمهندسين والمفكرون المتطوعين غير التقليديين نشترك بشغف مع أولئك الذين يشاركوننا رؤيتنا في تشكيل مستقبل تقديم الرعاية الصحيه المنزليه عن بعد لنوفر الدعم الطبي المنزلي للمواطنين بالمجان في جميع أنحاء جميع انحاء جمهوريه مصر العربيه وذلك تحت رعايه جمعيه القلب المصريه</p>
                                     </div>
                                 </div>
                                 <div class="card">
-                                    <img src="/Images/GoalsWe.png" class="bd-placeholder-img card-img-top img-circle" alt="...">
+                                    <img src="/images/GoalsWe.png" class="bd-placeholder-img card-img-top img-circle" alt="...">
                                     <div class="card-body">
-                                    <h5 class="card-title" style="text-align:center;">أهدفنا</h5>
+                                        <h5 class="card-title" style="text-align:center;">أهدفنا</h5>
                                         <p class="card-text">مع إمكانية استمرار الابتعاد الاجتماعي المتقطع خلال هذا العام ، فإن التغيير للرعاية الصحية عن بعد في مصر هو تحدينا ومهمتنا ومعًا يمكننا قيادة تجربة رعاية صحية أفضل من خلال التكنولوجيا والدعم الذي يحدث فرقًا حقيقيًا ولن نتوقف حتى نبني نظامًا أفضل معًا لتمكين المقيمين من الحصول على الرعاية الصحيه في منازلهم بامان للحد من انتشار العدوى وتقليل الضغط على المستشفيات</p>
-                                    
                                     </div>
                                 </div>
                                 <div class="card">
-                                    <img src="/Images/HealthWe.png" class="bd-placeholder-img card-img-top img-circle" alt="...">
+                                    <img src="/images/HealthWe.png" class="bd-placeholder-img card-img-top img-circle" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title" style="text-align:center;">برنامج صحه</h5>
                                         <p class="card-text">هو منصة الرعاية الصحيه المنزليه المجانيه المساند في حالات الطوارئ عن بعد والخط الأمامي لمقدمي الرعاية الصحية المتتطوعين في جميع أنحاء البلاد لتوفير الخدمه الطبيه لأكثر من ١٠٠ مليون مصري بكفاءة  لتقليل الاتصال وجهاً لوجه مع المرضى المعرضين للخطر، ومعالجتهم خارج العيادات بأمان حيث يجب ان يتم تشجيعهم على تجنب المستشفيات إلا إذا لزم الأمر
@@ -131,23 +139,6 @@
                 </div>
             </div>
         </div>
-        <div class="modal fade" id="Questineer" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-header text-center">
-                        <h4 class="modal-title w-100 font-weight-bold">تشخيص كورونا</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body mb-0 p-0">
-                        <div class="embed-responsive embed-responsive-21by9 z-depth-1-half">
-                            <iframe class="embed-responsive-item" src="https://docs.google.com/forms/d/e/1FAIpQLSdQxrrxSdcHToVKMO3Si3wydj_gsweVC-mbiuHZ0ZHS4GLh8A/viewform?embedded=true" width="640" height="3298" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-                        </div>
-                    </div>               
-                </div>
-            </div>
-        </div>
         <!-- Modal -->
         <div class="modal fade" id="Quest" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
             <div class="modal-dialog modal-xl">
@@ -161,6 +152,25 @@
                     <div class="modal-body">
                         <div class="embed-responsive embed-responsive-16by9" style="height:3298px;">
                             <iframe class="embed-responsive-item"  src="https://docs.google.com/forms/d/e/1FAIpQLSdQxrrxSdcHToVKMO3Si3wydj_gsweVC-mbiuHZ0ZHS4GLh8A/viewform?embedded=true" width="640" height="3298" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="Store" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title w-100 font-weight-bold">مبادرة مصر أدها للتجارة عن بعد</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="embed-responsive embed-responsive-16by9" style="height: 1100px;">
+                            <iframe class="embed-responsive-item"  src="https://docs.google.com/forms/d/e/1FAIpQLSeQKgYQEDtvtjOZwjmjjAIX5DdEd7slHokruBNGf4hos4a2jA/viewform?embedded=true" width="640" height="3298" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                            
                         </div>
                     </div>
                 </div>

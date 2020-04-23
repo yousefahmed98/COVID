@@ -18,6 +18,7 @@
         <link rel="stylesheet" href="<?php echo $css; ?>normalize.css">
         <link rel="stylesheet" href="<?php echo $css; ?>home.css">
         <link rel="stylesheet" href="<?php echo $css; ?>footer.css">
+        <link rel="stylesheet" href="<?php echo $css; ?>healthCheckUp.css">
         <!-------------------Style Sheets-------------------->
     </head>
     <body dir="rtl">

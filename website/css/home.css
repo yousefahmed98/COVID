@@ -137,7 +137,6 @@ header .overlay {
     }
 }
 
-.feelYes,
-.feelNo {
+.feelYes {
     transition: 0.7s;
 }

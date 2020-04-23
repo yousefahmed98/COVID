@@ -50,7 +50,11 @@ TxtRotate.prototype.tick = function() {
         that.tick();
     }, delta);
 };
-
+$(document).ready(function() {
+    $('#datepicker').datepicker({
+        uiLibrary: 'bootstrap4'
+    });
+});
 window.onload = function() {
     var elements = document.getElementsByClassName('txt-rotate');
     for (var i = 0; i < elements.length; i++) {

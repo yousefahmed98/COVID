@@ -1,125 +1,109 @@
-
-        <div class="content-wrapper">
-                <section class="content">
-                    <div class="container-fluid">
+<?php
+    $PageTitle = "إختبار صحتك";
+    include '../init.php';
+?>
+<div class="content-wrapper">
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">بيانات عامة</h3>
+                    </div>
+                    <div class="card-body">
                         <div class="row">
-                            <div class="col-md-12">
-                                <!-- Form Element sizes -->
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h3 class="card-title">بيانات عامة</h3>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="row">
-                                            <div class="col-md-8">
-                                                <label class="control-label"><strong>الجنس</strong></label></div>
-                                            <div class="col-md-4">
-                                                <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                                    <label class="btn btn-success active">
-                                                        <input type="radio" name="options" id="option1" autocomplete="off" checked>
-                                                        ذكر
-                                                    </label>
-                                                    <label class="btn btn-success">
-                                                        <input type="radio" name="options" id="option2" autocomplete="off">
-                                                        أنثى
-                                                    </label>
-
-                                                </div>
-                                            </div>
-
-
-                                        </div>
-                                        <br />
-                                        <div class="row">
-                                            <div class="col-md-8">
-                                                <label class="control-label"><strong>سنة الميلاد</strong></label></div>
-                                            <div class="col-md-4">
-                                                <input class="form-control" type="text" placeholder="click to show datepicker" id="datepicker">
-                                            </div>
-                                        </div>
-                                        <br />
-                                        <div class="row">
-                                            <div class="col-md-8">
-                                                <label class="control-label"><strong>هل أنت مدخن</strong></label></div>
-                                            <div class="col-md-4">
-                                                <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                                    <label class="btn btn-success active">
-                                                        <input type="radio" name="options" id="option1" autocomplete="off" checked>
-                                                        لا
-                                                    </label>
-                                                    <label class="btn btn-success">
-                                                        <input type="radio" name="options" id="option2" autocomplete="off">
-                                                        نعم
-                                                    </label>
-
-                                                </div>
-                                            </div>
-
-
-                                        </div>
-                                        <br />
-                                        <div class="row">
-                                            <div class="col-md-8">
-                                                <label class="control-label"><strong>هل تعانى من أمراض مزمنة؟</strong></label></div>
-                                            <div class="col-md-4">
-                                                <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                                    <label class="btn btn-success active">
-                                                        <input type="radio" name="options" id="option1" autocomplete="off" checked>
-                                                        لا
-                                                    </label>
-                                                    <label class="btn btn-success">
-                                                        <input type="radio" name="options" id="option2" autocomplete="off">
-                                                        نعم
-                                                    </label>
-
-                                                </div>
-                                            </div>
-
-
+                            <div class="col-md-8">
+                                <label class="control-label"><strong>الجنس</strong></label></div>
+                                    <div class="col-md-4">
+                                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                            <label class="btn btn-success active p-3">
+                                            <input type="radio" name="options" id="option1" autocomplete="off" checked>ذكر</label>
+                                            <label class="btn btn-danger p-3">
+                                            <input type="radio" name="options" id="option2" autocomplete="off">أنثى</label>
                                         </div>
                                     </div>
-                                    <!-- /.card-body -->
                                 </div>
-                                <!-- /.card -->
-                                <!-- Form Element sizes -->
-                                <div class="card card-success">
-                                    <div class="card-header">
-                                        <h3 class="card-title">حول صحتك فى اخر اسبوعين</h3>
+                                <br/>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <label class="control-label"><strong>سنة الميلاد</strong></label>
                                     </div>
-                                    <div class="card-body">
-                                        <div class="row">
-                                            <label class="control-label">
-                                                <strong>خلال ال 14 يوم الماضية فقط ، هل ظهرت لديك أي من الأعراض الرئيسية التالية؟
-                                                </strong>
+                                    <div class="col-md-4">
+                                        <input class="form-control" type="text" placeholder="إضغط هنا لتختار التاريخ" id="datepicker"></div>
+                                    </div>
+                                    <br />
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <label class="control-label"><strong>هل أنت مدخن</strong></label></div>
+                                        <div class="col-md-4">
+                                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                            <label class="btn btn-success active p-3">
+                                                <input type="radio" name="options" id="option1" autocomplete="off" checked>لا
                                             </label>
-                                            <div class="col-md-8">
+                                            <label class="btn btn-danger p-3">
+                                                <input type="radio" name="options" id="option2" autocomplete="off">نعم
+                                            </label>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <br />
+                                <div class="row">
+                                        <div class="col-md-8">
+                                            <label class="control-label"><strong>هل تعانى من أمراض مزمنة؟</strong></label></div>
+                                        <div class="col-md-4">
+                                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                                <label class="btn btn-success active p-3">
+                                                    <input type="radio" name="options" id="option1" autocomplete="off" checked>
+                                                    لا
+                                                </label>
+                                                <label class="btn btn-danger p-3">
+                                                    <input type="radio" name="options" id="option2" autocomplete="off">
+                                                    نعم
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <!-- /.card-body -->
+                            </div>
+                            <!-- /.card -->
+                            <div class="card card-success">
+                                <div class="card-header">
+                                    <h3 class="card-title">حول صحتك فى اخر اسبوعين</h3>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <label class="control-label">
+                                            <strong>خلال ال 14 يوم الماضية فقط ، هل ظهرت لديك أي من الأعراض الرئيسية التالية؟</strong>
+                                        </label>
+                                    </div>
+                                            <div class="col-md-12">
                                                 <div class="custom-control custom-checkbox">
-                                                    <input class="custom-control-input" type="checkbox" id="customCheckbox1" value="option1">
-                                                    <label for="customCheckbox1" class="custom-control-label">
-                                                        صعوبة شديدة بالتنفس (انقطاع او تسارع النفس)
-                                                    </label>
+                                                <label class="custom-control-label" for="custom1" style="position: absolute;">صعوبة شديدة بالتنفس (انقطاع او تسارع النفس)</label>
+                                                    <input class="custom-control-input" type="checkbox" id="custom1" value="option1" required>
                                                 </div>
                                                 <div class="custom-control custom-checkbox">
-                                                    <input class="custom-control-input" type="checkbox" id="customCheckbox2" value="option1">
-                                                    <label for="customCheckbox2" class="custom-control-label">
+                                                    <input class="custom-control-input" type="checkbox" id="custom2" value="option2" required>
+                                                    <label for="custom2" class="custom-control-label">
                                                         ألم مستمر في الصدر
                                                     </label>
                                                 </div>
                                                 <div class="custom-control custom-checkbox">
-                                                    <input class="custom-control-input" type="checkbox" id="customCheckbox3" value="option1">
-                                                    <label for="customCheckbox3" class="custom-control-label">
+                                                    <input class="custom-control-input" type="checkbox" id="custom3" value="option3" required>
+                                                    <label for="custom3" class="custom-control-label">
                                                         زرقة الشفاه أو الوجه
                                                     </label>
                                                 </div>
                                                 <div class="custom-control custom-checkbox">
-                                                    <input class="custom-control-input" type="checkbox" id="customCheckbox4" value="option1">
-                                                    <label for="customCheckbox4" class="custom-control-label">
+                                                    <input class="custom-control-input" type="checkbox" id="custom4" value="option4" required>
+                                                    <label for="custom4" class="custom-control-label">
                                                         ارهاق شديد و عدم القدرة على النهوض
                                                     </label>
                                                 </div>
                                                 <div class="custom-control custom-checkbox">
-                                                    <input class="custom-control-input" type="checkbox" id="customCheckbox5" value="option1">
-                                                    <label for="customCheckbox5" class="custom-control-label">
+                                                    <input class="custom-control-input" type="checkbox" id="custom5" value="option5" required>
+                                                    <label for="custom5" class="custom-control-label">
                                                         لا شيء مما ذكر
                                                     </label>
                                                 </div>
@@ -129,7 +113,7 @@
                                         </div>
                                         <br />
                                         <div class="row">
-                                            <div class="col-md-8"><label class="control-label">
+                                            <div class="col-md-12"><label class="control-label">
                                                 <strong>خلال ال 14 يوم الماضية فقط ، هل ظهرت لديك أي من الأعراض الشائعة التالية؟
                                                 </strong>
                                             </label></div>
@@ -282,11 +266,11 @@
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                                    <label class="btn btn-success active">
+                                                    <label class="btn btn-success active p-3">
                                                         <input type="radio" name="options" id="option1" autocomplete="off" checked>
                                                         لا
                                                     </label>
-                                                    <label class="btn btn-success">
+                                                    <label class="btn btn-danger p-3">
                                                         <input type="radio" name="options" id="option2" autocomplete="off">
                                                         نعم
                                                     </label>
@@ -307,11 +291,11 @@
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                                    <label class="btn btn-success active">
+                                                    <label class="btn btn-success active p-3">
                                                         <input type="radio" name="options" id="option1" autocomplete="off" checked>
                                                         لا
                                                     </label>
-                                                    <label class="btn btn-success">
+                                                    <label class="btn btn-danger p-3">
                                                         <input type="radio" name="options" id="option2" autocomplete="off">
                                                         نعم
                                                     </label>
@@ -332,11 +316,11 @@
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                                    <label class="btn btn-success active">
+                                                    <label class="btn btn-success active p-3">
                                                         <input type="radio" name="options" id="option1" autocomplete="off" checked>
                                                         لا
                                                     </label>
-                                                    <label class="btn btn-success">
+                                                    <label class="btn btn-danger p-3">
                                                         <input type="radio" name="options" id="option2" autocomplete="off">
                                                         نعم
                                                     </label>
@@ -357,11 +341,11 @@
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                                    <label class="btn btn-success active">
+                                                    <label class="btn btn-success active p-3">
                                                         <input type="radio" name="options" id="option1" autocomplete="off" checked>
                                                         لا
                                                     </label>
-                                                    <label class="btn btn-success">
+                                                    <label class="btn btn-danger p-3">
                                                         <input type="radio" name="options" id="option2" autocomplete="off">
                                                         نعم
                                                     </label>
@@ -382,11 +366,11 @@
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                                    <label class="btn btn-success active">
+                                                    <label class="btn btn-success active p-3">
                                                         <input type="radio" name="options" id="option1" autocomplete="off" checked>
                                                         لا
                                                     </label>
-                                                    <label class="btn btn-success">
+                                                    <label class="btn btn-danger p-3">
                                                         <input type="radio" name="options" id="option2" autocomplete="off">
                                                         نعم
                                                     </label>
@@ -407,11 +391,11 @@
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                                    <label class="btn btn-success active">
+                                                    <label class="btn btn-success active p-3">
                                                         <input type="radio" name="options" id="option1" autocomplete="off" checked>
                                                         لا
                                                     </label>
-                                                    <label class="btn btn-success">
+                                                    <label class="btn btn-danger p-3">
                                                         <input type="radio" name="options" id="option2" autocomplete="off">
                                                         نعم
                                                     </label>
@@ -433,11 +417,11 @@
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                                    <label class="btn btn-success active">
+                                                    <label class="btn btn-success active p-3">
                                                         <input type="radio" name="options" id="option1" autocomplete="off" checked>
                                                         لا
                                                     </label>
-                                                    <label class="btn btn-success">
+                                                    <label class="btn btn-danger p-3">
                                                         <input type="radio" name="options" id="option2" autocomplete="off">
                                                         نعم
                                                     </label>
@@ -459,27 +443,25 @@
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                                    <label class="btn btn-success active">
+                                                    <label class="btn btn-success active p-3">
                                                         <input type="radio" name="options" id="option1" autocomplete="off" checked>
                                                         لا
                                                     </label>
-                                                    <label class="btn btn-success">
+                                                    <label class="btn btn-danger p-3">
                                                         <input type="radio" name="options" id="option2" autocomplete="off">
                                                         نعم
                                                     </label>
 
                                                 </div>
                                             </div>
-
-
                                         </div>
                                     </div>
                                     <!-- /.card-body -->
                                 </div>
                                 <!-- /.card -->
                             </div>
-
                         </div>
+                         <br>
                          <br>
                 <hr class="style12">
                         <div class="row">
@@ -495,69 +477,69 @@
                 </section>
             </div>
        <br />
-           <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header text-center">
-                    <h4 class="modal-title w-100 font-weight-bold">تسجيل مساعدة طبية</h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body mx-3">
-                    <form class="text-center border border-light p-5" action="#!">
-                        <!-- First name -->
-                        <div class="form-row mb-4">
-                                <input type="text" id="defaultRegisterFormFirstName" runat="server" class="form-control" placeholder="الأسم"/>
-                            </div>
-                        <!-- E-mail -->
-                        <input type="email" id="defaultRegisterFormEmail" runat="server" class="form-control mb-4" placeholder="البريد الإلكترونى"/>                       
-
-                        <!-- Phone number -->
-                        <input type="text" id="defaultRegisterPhonePassword" runat="server" class="form-control" placeholder="رقم الهاتف" aria-describedby="defaultRegisterFormPhoneHelpBlock"/>
-                       
-                      
-                        <!-- Sign up button -->
-                        <button ID="regbtn" runat="server" class="btn btn-info my-4 btn-block" Text="تسجيل" OnClick="regbtn_Click" PostBackUrl="~/Home.aspx" />
-                        <!-- Social register -->
-                        <p>او سجل ب:</p>
-
-                        <a href="#" class="mx-2" role="button"><i class="fab fa-facebook-f light-blue-text"></i></a>
-                        <a href="#" class="mx-2" role="button"><i class="fab fa-twitter light-blue-text"></i></a>
-                        <a href="#" class="mx-2" role="button"><i class="fab fa-linkedin-in light-blue-text"></i></a>
-                        <a href="#" class="mx-2" role="button"><i class="fab fa-github light-blue-text"></i></a>
-
-                        <hr>
-
-                        <!-- Terms of service -->
-                        <p>
-                            بالتسجيل فأنت موافق على
-        <a href="" target="_blank">الشروط والأحكام</a>
-                    </form>
-                    <!-- Default form register -->
-                </div>               
-            </div>
-        </div>
+<div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+aria-hidden="true">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+    <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">تسجيل مساعدة طبية</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
     </div>
-                <div class="modal fade" id="Questineer" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header text-center">
-                    <h4 class="modal-title w-100 font-weight-bold">تشخيص كورونا</h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+    <div class="modal-body mx-3">
+        <form class="text-center border border-light p-5" action="#!">
+            <!-- First name -->
+            <div class="form-row mb-4">
+                    <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="الأسم"/>
                 </div>
-                <div class="modal-body mb-0 p-0">
-                    <div class="embed-responsive embed-responsive-21by9 z-depth-1-half">
-                   <iframe class="embed-responsive-item" src="https://docs.google.com/forms/d/e/1FAIpQLSdQxrrxSdcHToVKMO3Si3wydj_gsweVC-mbiuHZ0ZHS4GLh8A/viewform?embedded=true" width="640" height="3298" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-                        </div>
-                </div>               
-            </div>
-        </div>
+            <!-- E-mail -->
+            <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="البريد الإلكترونى"/>                       
+
+            <!-- Phone number -->
+            <input type="text" id="defaultRegisterPhonePassword" class="form-control" placeholder="رقم الهاتف" aria-describedby="defaultRegisterFormPhoneHelpBlock"/>
+            <br><br>
+            <!-- Sign up button -->
+            <button class="btn btn-info btn-block">تسجيل</button>
+            <br><br>
+            <!-- Social register -->
+            <p>او سجل ب:</p>
+
+            <a href="#" class="mx-2" role="button"><i class="fab fa-facebook-f light-blue-text"></i></a>
+            <a href="#" class="mx-2" role="button"><i class="fab fa-twitter light-blue-text"></i></a>
+            <a href="#" class="mx-2" role="button"><i class="fab fa-linkedin-in light-blue-text"></i></a>
+            <a href="#" class="mx-2" role="button"><i class="fab fa-github light-blue-text"></i></a>
+
+            <hr>
+
+            <!-- Terms of service -->
+            <p>
+                بالتسجيل فأنت موافق على
+            <a href="" target="_blank">الشروط والأحكام</a>
+        </form>
+        <!-- Default form register -->
+    </div>               
+</div>
+</div>
+</div>
+    <div class="modal fade" id="Questineer" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-lg" role="document">
+<div class="modal-content">
+    <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">تشخيص كورونا</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
     </div>
+    <div class="modal-body mb-0 p-0">
+        <div class="embed-responsive embed-responsive-21by9 z-depth-1-half">
+        <iframe class="embed-responsive-item" src="https://docs.google.com/forms/d/e/1FAIpQLSdQxrrxSdcHToVKMO3Si3wydj_gsweVC-mbiuHZ0ZHS4GLh8A/viewform?embedded=true" width="640" height="3298" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
+    </div>               
+</div>
+</div>
+</div>
            <!-- Modal -->
 <div class="modal fade" id="Quest" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
   <div class="modal-dialog modal-xl">
@@ -579,20 +561,6 @@
 
         </div>
         </form>
-	    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>   
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-       
-        
-        <script src="https://cdn.rtlcss.com/bootstrap/v4.0.0/js/bootstrap.min.js" integrity="sha384-54+cucJ4QbVb99v8dcttx/0JRx4FHMmhOWi4W+xrXpKcsKQodCBwAvu3xxkZAwsH" crossorigin="anonymous"></script>	
-    
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/fontawesome.min.js"></script>
-         <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
-      <script type="text/javascript">
-          $(document).ready(function () {
-              $('#datepicker').datepicker({
-                  uiLibrary: 'bootstrap4'
-              }); 
-          });
-        </script>
-	</body>
-</html>
+        <?php
+        include_once '../global/footer.php';
+        ?>
