@@ -1,0 +1,9 @@
+#sticky-footer {
+    flex-shrink: none;
+}
+
+#sticky-footer>div>small {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
