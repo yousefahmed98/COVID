@@ -13,6 +13,7 @@ if(isset($_GET['submit'])){
         echo "<script> alert('Enter All Data'); </script>";
     }
 }
+
     
 ?>
 
