@@ -2,7 +2,7 @@
     $root = '/';
     $pg = 'Pages/';
     $lang = 'Languages/';
-    $gl = 'global/';
+    $gl = 'static/';
 
     //Template Directory
     $func = 'functions/';

@@ -1,0 +1,5 @@
+.custom-control-label {
+    position: static !important;
+    margin-bottom: 0;
+    vertical-align: top;
+}

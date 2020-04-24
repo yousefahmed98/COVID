@@ -310,7 +310,6 @@ textarea {
    * 2. Remove the padding in IE 10.
    */
 
-[type="checkbox"],
 [type="radio"] {
     box-sizing: border-box;
     /* 1 */
@@ -405,4 +404,9 @@ template {
 
 [hidden] {
     display: none;
+}
+
+.custom-control-label {
+    position: relative;
+    right: 12px;
 }

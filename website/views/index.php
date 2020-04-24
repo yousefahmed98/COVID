@@ -1,13 +1,12 @@
 <?php
     $PageTitle = "مصر أدها";
-    include_once "init.php";
-    
-    
+    include_once "../init.php";
+    include_once "navbar.php";
 ?>
         <header>
             <div class="overlay"></div>
             <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-                <source src="<?php echo $vd . 'EgyptFlag.mp4'?>" type="video/mp4">
+                <source src="../Videos/EgyptFlag.mp4" type="video/mp4">
             </video>
             <div class="container h-100">
                 <div class="d-flex h-100 text-center align-items-center">
@@ -30,7 +29,7 @@
                                 <div class="text-center">
                                     <h3 style="text-align: center;" class="mb-3">طمن نفسك</h3>
                                     <div class="btn-group" role="group" aria-label="Basic example">
-                                        <form action="<?php echo $pg. 'healthCheckUp.php'?>" method="get">
+                                        <form action="healthCheckUp.php" method="get">
                                             <button type="submit" class="btn btn-outline-success btn-lg feelYes mr-3">
                                                 <i class="fas fa-thumbs-up"></i><br /> لا أشعر بأعراض</button>
                                         </form>
@@ -63,21 +62,21 @@
                         <div class="row">
                             <div class="card-group">
                                 <div class="card">                            
-                                    <img src="/images/Whowe.png" class="bd-placeholder-img card-img-top img-circle" alt="...">
+                                    <img src="../images/Whowe.png" class="bd-placeholder-img card-img-top img-circle" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title" style="text-align:center;">من نحن</h5>
                                         <p class="card-text">نحن مجموعه من الاطباء والمهندسين والمفكرون المتطوعين غير التقليديين نشترك بشغف مع أولئك الذين يشاركوننا رؤيتنا في تشكيل مستقبل تقديم الرعاية الصحيه المنزليه عن بعد لنوفر الدعم الطبي المنزلي للمواطنين بالمجان في جميع أنحاء جميع انحاء جمهوريه مصر العربيه وذلك تحت رعايه جمعيه القلب المصريه</p>
                                     </div>
                                 </div>
                                 <div class="card">
-                                    <img src="/images/GoalsWe.png" class="bd-placeholder-img card-img-top img-circle" alt="...">
+                                    <img src="../images/GoalsWe.png" class="bd-placeholder-img card-img-top img-circle" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title" style="text-align:center;">أهدفنا</h5>
                                         <p class="card-text">مع إمكانية استمرار الابتعاد الاجتماعي المتقطع خلال هذا العام ، فإن التغيير للرعاية الصحية عن بعد في مصر هو تحدينا ومهمتنا ومعًا يمكننا قيادة تجربة رعاية صحية أفضل من خلال التكنولوجيا والدعم الذي يحدث فرقًا حقيقيًا ولن نتوقف حتى نبني نظامًا أفضل معًا لتمكين المقيمين من الحصول على الرعاية الصحيه في منازلهم بامان للحد من انتشار العدوى وتقليل الضغط على المستشفيات</p>
                                     </div>
                                 </div>
                                 <div class="card">
-                                    <img src="/images/HealthWe.png" class="bd-placeholder-img card-img-top img-circle" alt="...">
+                                    <img src="../images/HealthWe.png" class="bd-placeholder-img card-img-top img-circle" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title" style="text-align:center;">برنامج صحه</h5>
                                         <p class="card-text">هو منصة الرعاية الصحيه المنزليه المجانيه المساند في حالات الطوارئ عن بعد والخط الأمامي لمقدمي الرعاية الصحية المتتطوعين في جميع أنحاء البلاد لتوفير الخدمه الطبيه لأكثر من ١٠٠ مليون مصري بكفاءة  لتقليل الاتصال وجهاً لوجه مع المرضى المعرضين للخطر، ومعالجتهم خارج العيادات بأمان حيث يجب ان يتم تشجيعهم على تجنب المستشفيات إلا إذا لزم الأمر
@@ -100,7 +99,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="embed-responsive embed-responsive-16by9">
-                                    <iframe class="embed-responsive-item" src="<?php echo $vd .'v1.mp4'?>?rel=0&cc_load_policy=1"></iframe>
+                                    <iframe class="embed-responsive-item" src="../Videos/v1.mp4?rel=0&cc_load_policy=1&autoplay=0"></iframe>
                                 </div>
                             </div>
                         </div>
@@ -179,8 +178,6 @@
             </div>
         </div>
     </div>
-
-// to get clinet location 
     <script>
     (function () {
     navigator.geolocation.getCurrentPosition(function (position) {
@@ -193,16 +190,9 @@
         console.log("The Locator was denied. :(")
     })
     })();
-    </script>
-
-    <?php
-        include_once "functions/functions.php";
-        debug(getUserIp());
-        
-    ?>
-
-
-
+    </script>        
 <?php
-    include_once $gl .'footer.php';
+    include_once 'functions/functions.php';
+    debug(getUserIp());    
+    include_once 'footer.php';
 ?>

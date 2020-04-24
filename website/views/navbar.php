@@ -1,4 +1,3 @@
-<link href="../css/navbar.css" rel="stylesheet">
 <div class="contanier-fluid">
     <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
         <a class="navbar-brand" href="index.php">مصر أدها</a>
@@ -8,16 +7,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo $root . 'index.php' ?>">الرئيسية</a>
+                    <a class="nav-link" href="index.php">الرئيسية</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo $pg . 'MedicalServices.php'?>">الخدمات</a>
+                    <a class="nav-link" href="MedicalServices.php">الخدمات</a>
                 </li>
                  <li class="nav-item">
-                    <a class="nav-link" href="<?php echo $pg . 'About.php'?>">عن المبادرة</a>
+                    <a class="nav-link" href="About.php">عن المبادرة</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo $pg . 'join.php'?>">انضم للمبادرة</a>
+                    <a class="nav-link" href="join.php">انضم للمبادرة</a>
                 </li>
             </ul>
         </div>

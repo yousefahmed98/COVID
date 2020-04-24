@@ -1,6 +1,7 @@
 <?php
     $PageTitle = "التواصل";
     include_once "../init.php";
+    include_once "navbar.php";
 ?>
 <div class="row">
     <div class="col-lg-12">

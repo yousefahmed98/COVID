@@ -2,12 +2,6 @@
     font-family: "Overpass", 'El Messiri', sans-serif;
 }
 
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
 .botyrow {
     position: absolute;
     right: 45%;
@@ -139,4 +133,8 @@ header .overlay {
 
 .feelYes {
     transition: 0.7s;
+}
+
+.page-wrap {
+    min-height: 100vh;
 }
