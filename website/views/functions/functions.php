@@ -1,7 +1,6 @@
 <?php
     function validate()
     {
-        if(isset($_GET['submit'])){
             $options=$_GET["options"];
             $Birthdate=$_GET["Birthdate"];
             $options1=$_GET["options1"];
@@ -12,7 +11,6 @@
             else{
                 return true;
             } 
-        }
     
     }
 
