@@ -1,4 +1,29 @@
 <?php
+    function validate()
+    {
+        if(isset($_GET['submit'])){
+            $options=$_GET["options"];
+            $Birthdate=$_GET["Birthdate"];
+            $options1=$_GET["options1"];
+            if($options==""||$Birthdate==""||$options1=="")
+            {
+                return false;
+            }
+            else{
+                return true;
+            } 
+        }
+    
+    }
+
+    function insert_quest(){
+
+    }
+
+    function calc_results()
+    {
+       
+    }
     // Get Title of Pages
     function getTitle(){
         global $PageTitle;
