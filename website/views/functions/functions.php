@@ -15,7 +15,15 @@
     }
 
     function insert_quest(){
-
+        if(isset($_COOKIE["latitude"]) && isset($_COOKIE["longitude"])){
+            $lon=$_COOKIE["longitude"];
+            $lat=$_COOKIE["latitude"];
+        }
+        else{
+            $lon=$_COOKIE[""];
+            $lat=$_COOKIE[""];
+        }
+        $ip= getUserIp();
     }
 
     function calc_results()
