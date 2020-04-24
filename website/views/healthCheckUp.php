@@ -4,15 +4,16 @@
     include_once "navbar.php";
     include "../db.php";
 
-    if(validate())
-    {
-        insert_quest();
-        $sick=calc_results();
-        header("Location:checkDone.php?sick=".$sick."");
-    }else{
-        echo "<script> alert('Enter All Data'); </script>";
+    if(isset($_GET['submit'])){
+        if(validate())
+        {
+            insert_quest();
+            $sick=calc_results();
+            header("Location:checkDone.php?sick=".$sick."");
+        }else{
+            echo "<script> alert('Enter All Data'); </script>";
+        }
     }
-
     
 ?>
 
