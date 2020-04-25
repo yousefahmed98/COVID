@@ -9,6 +9,7 @@
 
     mysql_select_db($database);*/
 
-    
+    $db = new PDO("mysql:host=localhost;dbname=masr_adaha","root","12345678");
+
 ?>
     
