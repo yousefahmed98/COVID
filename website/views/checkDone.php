@@ -7,50 +7,42 @@
     <div class="col-md-6 p-0 bg-indigo h-md-100">
         <div class="text-white d-md-flex align-items-center h-100 p-5 text-center justify-content-center">
             <div class="logoarea pt-5 pb-5">
-                <!-- Grid column -->
-                <!-- Grid column -->
-                <div class="col-md-6 mb-4">
-                    <div class="card bg-secondary form-white">
-                        <div class="card-body">
-                            <!-- Form contact -->
-                            <form>
-                                <h2 class="text-center py-4 font-bold font-up white-text">Contact us</h2>
-                                <div class="md-form">
-                                    <i class="fa fa-user prefix white-text"></i>
-                                    <input type="text" id="form32" class="form-control">
-                                    <label for="form32">Your name</label>
-                                </div>
-                                <div class="md-form">
-                                    <i class="fa fa-envelope prefix white-text"></i>
-                                    <input type="text" id="form22" class="form-control">
-                                    <label for="form22">Your email</label>
-                                </div>
-                                <div class="md-form">
-                                    <i class="fa fa-tag prefix white-text"></i>
-                                    <input type="text" id="form322" class="form-control">
-                                    <label for="form342">Subject</label>
-                                </div>
-                                <div class="md-form">
-                                    <i class="fa fa-pencil prefix white-text"></i>
-                                    <textarea type="text" id="form82" class="md-textarea" style="height: 100px"></textarea>
-                                    <label for="form82">Your message</label>
-                                </div>
-                                <div class="text-center">
-                                    <button class="btn btn-info btn-lg">Send</button>
-                                </div>
-                            </form>
-                            <!-- Form contact -->
-                        </div>
-                    </div>
-                </div>
-                <!-- Grid column -->
-            </div>
             </div>
         </div>
     </div>
     <div class="col-md-6 p-0 bg-white h-md-100 loginarea">
         <div class="d-md-flex align-items-center h-md-100 p-5 justify-content-center">
-            Second half content here
+            <div class="formModel">
+                <form name="FormReg" action="">
+                    <h1 class="text-center">تسجيل </h1>
+                    <div class="form-input ml-5 mb-5">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6"><label for="username">الاسم</label></div>
+                            <div class="col-lg-6 col-md-6 col-sm-6"><input type="text" placeholder="أدخل اسمك...." id="username" name="username" class="float-right"></div>
+                        </div>
+                    </div>
+                    <div class="form-input ml-5 mb-5">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6"><label for="email">البريد </label></div>
+                            <div class="col-lg-6 col-md-6 col-sm-6"><input type="email" placeholder="أدخل بريدك الإلكتروني...." id="email" name="email" class="float-right"></div>
+                        </div>
+                    </div>
+                    <div class="form-input ml-5 mb-5">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6"><label for="phoneNumber">رقم التليفون</label></div>
+                            <div class="col-lg-6 col-md-6 col-sm-6"><input type="text" placeholder="أدخل رقم تليفونك...." id="phoneNumber" name="phoneNumber" class="float-right"></div>
+                        </div>
+                    </div>
+                    <div class="form-button">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <button name="regSubmit" class="btn regbtn" type="button">تسجيل</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
         </div>
     </div>    
 </div>
@@ -59,7 +51,7 @@
         .h-md-100 { height: 100vh; }
     }
     .btn-round { border-radius: 30px; }
-    .bg-indigo { background: indigo; }
+    .bg-indigo { background: rgba(0, 173, 101, 0.9); }
     .text-cyan { color: #35bdff; }
 </style>
 
