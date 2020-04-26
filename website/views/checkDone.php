@@ -3,8 +3,9 @@
     $PageTitle = "أطمن علي صحتك";
     include_once "../init.php";
     include_once "navbar.php";
-
+    debug($_GET["sickness"]);
     $sickness=$_GET["sickness"];
+
 ?>
 
 <!--chating part -->
