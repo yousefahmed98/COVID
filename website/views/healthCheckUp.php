@@ -3,6 +3,7 @@
     include '../init.php';
     include_once "navbar.php";
     include "../db.php";
+    
    
 if(isset($_GET['submit'])){
     if(validate())
@@ -38,10 +39,10 @@ if(isset($_GET['submit'])){
                                 <div class="col-md-4">
                                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                         <label class="btn btn-success active p-3">
-                                            <input type="radio" name="options1" id="option1" value="ذكر"
+                                            <input type="radio" name="options" id="option1" value="ذكر"
                                                 autocomplete="off">
                                             <label class="btn btn-danger p-3">
-                                                <input type="radio" name="options1" id="option2" value="أنثى"
+                                                <input type="radio" name="options" id="option2" value="أنثى"
                                                     autocomplete="off">
                                     </div>
                                 </div>
@@ -66,12 +67,12 @@ if(isset($_GET['submit'])){
                                     <div class="col-md-4">
                                         <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                             <label class="btn btn-success active p-3">
-                                                <input type="radio" name="options2" id="option1" value="لا"
+                                                <input type="radio" name="options1" id="option1" value="لا"
                                                     autocomplete="off">لا
 
                                             </label>
                                             <label class="btn btn-danger p-3">
-                                                <input type="radio" name="options2" id="option2" value="نعم"
+                                                <input type="radio" name="options1" id="option2" value="نعم"
                                                     autocomplete="off">نعم
                                             </label>
                                         </div>
@@ -86,12 +87,12 @@ if(isset($_GET['submit'])){
                                     <div class="col-md-4">
                                         <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                             <label class="btn btn-success active p-3">
-                                                <input type="radio" name="options3" id="option1" value="لا"
+                                                <input type="radio" name="options2" id="option1" value="لا"
                                                     autocomplete="off">
                                                 لا
                                             </label>
                                             <label class="btn btn-danger p-3">
-                                                <input type="radio" name="options3" id="option2" value="نعم"
+                                                <input type="radio" name="options2" id="option2" value="نعم"
                                                     autocomplete="off">
                                                 نعم
                                             </label>
@@ -333,12 +334,12 @@ if(isset($_GET['submit'])){
                                     <div class="col-md-4">
                                         <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                             <label class="btn btn-success active p-3">
-                                                <input type="radio" name="options30" id="option1" value="لا"
+                                                <input type="radio" name="options3" id="option1" value="لا"
                                                     autocomplete="off">
                                                 لا
                                             </label>
                                             <label class="btn btn-danger p-3">
-                                                <input type="radio" name="options30" id="option2" value="نعم"
+                                                <input type="radio" name="options3" id="option2" value="نعم"
                                                     autocomplete="off">
                                                 نعم
                                             </label>
