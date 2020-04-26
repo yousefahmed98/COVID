@@ -4,6 +4,7 @@
     include_once "../init.php";
     include_once "navbar.php";
 ?>
+
 <!--chating part -->
 <script src="//code.tidio.co/ahtxzk8g4feko8u3z6c6ont9srshl5oe.js" async></script>
 
@@ -48,19 +49,62 @@
                     <div class="form-button">
                         <div class="row">
                             <div class="col-lg-12 col-md-12 col-sm-12">
-                                <button name="regSubmit" class="btn regbtn" type="button">تسجيل</button>
+                                <button name="regSubmit" class="btn regbtn" onclick="validateRegForm();" type="submit">تسجيل</button>
                             </div>
                         </div>
                     </div>
                 </form>
             </div>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-6 leftSection">
 
-        </div>
     </div>
 </div>
+<style>
+    @media (min-width: 768px) {
+        .h-md-100 { height: 100vh; }
+    }
+    .btn-round { border-radius: 30px; }
+    .bg-indigo { background: rgba(0, 173, 101, 0.9); }
+    .text-cyan { color: #35bdff; }
+</style>
+<script>
+    function validateRegForm(){
+        var username = document.forms["FormReg"]["username"].value;
+        var email = document.forms["FormReg"]["email"].value;
+        var phone = document.forms["FormReg"]["phoneNumber"].value;
 
+        /*alert(username);
+        alert(email);
+        alert(phone);*/
+
+
+        if(username==""||email==""||phone=="")
+        {
+            alert("ادخل كل البيانات المطلوبة");
+            return false;
+        }
+        else{
+            var emailPattern=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            if (!emailPattern.test(email)){
+                alert("البريد الالكترونى غير صحيح");
+                return false;
+            }    
+            var phonePattern = /^01[0125]\d{8}$/;
+            if(!phonePattern.test(phone))
+            {
+                alert("رقم الهاتف غير صحيح");
+                return false;
+            }
+            var namePattern = /^[a-zA-Z\ ]+$/;
+            if(!namePattern.test(username))
+            {
+                alert("الاسم غير صحيح");
+                return false;
+            }
+        }
+        return true;
+    }
+</script>    
 <?php
     include_once "footer.php";
 ?>

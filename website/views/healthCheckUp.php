@@ -2,6 +2,20 @@
     $PageTitle = "إختبار صحتك";
     include '../init.php';
     include_once "navbar.php";
+    include "../db.php";
+    include "../date.php";
+   
+if(isset($_GET['submit'])){
+    if(validate())
+    {
+        $sick=calc_results();
+        insert_quest();
+        header("Location:checkDone.php?sick=".$sick."");
+    }else{
+        echo "<script> alert('ادخل كل البيانات المطلوبة'); </script>";
+        }
+}
+
 
     if(isset($_GET['submit'])){
         //Code Here For Questions insertion.

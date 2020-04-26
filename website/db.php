@@ -1,15 +1,15 @@
 <?php
-    $dsn = 'mysql:host=localhost; dbname=shop';
-    $user= 'root';
-    $pass= '';
-    $option = array(
-        PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8',
-    );
-    try{
-        $con = new PDO($dsn, $user, $pass, $option);
-        $con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    }
-    catch(PDOException $e){
-    }
+
+    /*$host = '188.121.44.187:3306';
+    $user= 'egydb';
+    $pass= 'Egypt@1234';
+    $database ='misrad';
+
+    mysql_connect($host,$user,$pass) or
+    die("unable to connect to database");
+
+    mysql_select_db($database);*/
+
+    $db = new PDO("mysql:host=localhost;dbname=masr_adaha","root","12345678");
 ?>
     
