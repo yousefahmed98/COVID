@@ -12,7 +12,7 @@ if(isset($_GET['submit'])){
         insert_quest();
         header("Location:checkDone.php?sick=".$sick."");
     }else{
-        echo "<script> alert('Enter All Data'); </script>";
+        echo "<script> alert('ادخل كل البيانات المطلوبة'); </script>";
         }
 }
 

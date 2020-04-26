@@ -13,7 +13,7 @@
     <div class="col-md-6 p-0 bg-white h-md-100 loginarea">
         <div class="d-md-flex align-items-center h-md-100 p-5 justify-content-center">
             <div class="formModel">
-                <form name="FormReg" action="">
+                <form name="FormReg" action="saveRegInfo.php" method="post" onsubmit="return validateRegForm();">
                     <h1 class="text-center">تسجيل </h1>
                     <div class="form-input ml-5 mb-5">
                         <div class="row">
@@ -36,7 +36,7 @@
                     <div class="form-button">
                         <div class="row">
                             <div class="col-lg-12 col-md-12 col-sm-12">
-                                <button name="regSubmit" class="btn regbtn" type="button">تسجيل</button>
+                                <button name="regSubmit" class="btn regbtn" onclick="validateRegForm();" type="submit">تسجيل</button>
                             </div>
                         </div>
                     </div>
@@ -44,7 +44,7 @@
                 </form>
             </div>
         </div>
-    </div>    
+    </div>
 </div>
 <style>
     @media (min-width: 768px) {
@@ -54,7 +54,43 @@
     .bg-indigo { background: rgba(0, 173, 101, 0.9); }
     .text-cyan { color: #35bdff; }
 </style>
+<script>
+    function validateRegForm(){
+        var username = document.forms["FormReg"]["username"].value;
+        var email = document.forms["FormReg"]["email"].value;
+        var phone = document.forms["FormReg"]["phoneNumber"].value;
 
+        /*alert(username);
+        alert(email);
+        alert(phone);*/
+
+        if(username==""||email==""||phone=="")
+        {
+            alert("ادخل كل البيانات المطلوبة");
+            return false;
+        }
+        else{
+            var emailPattern=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            if (!emailPattern.test(email)){
+                alert("البريد الالكترونى غير صحيح");
+                return false;
+            }    
+            var phonePattern = /^01[0125]\d{8}$/;
+            if(!phonePattern.test(phone))
+            {
+                alert("رقم الهاتف غير صحيح");
+                return false;
+            }
+            var namePattern = /^[a-zA-Z\ ]+$/;
+            if(!namePattern.test(username))
+            {
+                alert("الاسم غير صحيح");
+                return false;
+            }
+        }
+        return true;
+    }
+</script>    
 <?php
     include_once "footer.php";
 ?>

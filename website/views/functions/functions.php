@@ -102,6 +102,122 @@
         $date = get_Date();
         
         $sql="INSERT INTO `tbl_ex_results`(`Quest_ID`, `ResultValue`, `UserIP`, `Lat`, `Lon`, `TimeSt`) VALUES (1,'".$options."','".$ip."','".$lat."','".$lon."','".$date."')";
+        if(mysql_query( $sql, $db ))
+            {
+            }
+            else{
+                echo "<script>alter('Something Went Wrong');</script>";
+            }
+        
+        $sql="INSERT INTO `tbl_ex_results`(`Quest_ID`, `ResultValue`, `UserIP`, `Lat`, `Lon`, `TimeSt`) VALUES (2,'".$Birthdate."','".$ip."','".$lat."','".$lon."','".$date."')";
+        if(mysql_query( $sql, $db ))
+            {
+            }
+            else{
+                echo "<script>alter('Something Went Wrong');</script>";
+            }
+
+
+        $sql="INSERT INTO `tbl_ex_results`(`Quest_ID`, `ResultValue`, `UserIP`, `Lat`, `Lon`, `TimeSt`) VALUES (3,'".$options1."','".$ip."','".$lat."','".$lon."','".$date."')";
+        if(mysql_query( $sql, $db ))
+            {
+            }
+            else{
+                echo "<script>alter('Something Went Wrong');</script>";
+            }
+        $sql="INSERT INTO `tbl_ex_results`(`Quest_ID`, `ResultValue`, `UserIP`, `Lat`, `Lon`, `TimeSt`) VALUES (6,'".$options2."','".$ip."','".$lat."','".$lon."','".$date."')";
+        if(mysql_query( $sql, $db ))
+            {
+            }
+            else{
+                echo "<script>alter('Something Went Wrong');</script>";
+            }
+        
+        
+
+
+        $sql="INSERT INTO `tbl_ex_results`(`Quest_ID`, `ResultValue`, `UserIP`, `Lat`, `Lon`, `TimeSt`) VALUES (8,'".$custom1A."','".$ip."','".$lat."','".$lon."','".$date."')";
+        if(mysql_query( $sql, $db ))
+            {
+            }
+            else{
+                echo "<script>alter('Something Went Wrong');</script>";
+            }
+        $sql="INSERT INTO `tbl_ex_results`(`Quest_ID`, `ResultValue`, `UserIP`, `Lat`, `Lon`, `TimeSt`) VALUES (9,'".$custom2A."','".$ip."','".$lat."','".$lon."','".$date."')";
+        if(mysql_query( $sql, $db ))
+            {
+            }
+            else{
+                echo "<script>alter('Something Went Wrong');</script>";
+            }
+        
+
+
+        $sql="INSERT INTO `tbl_ex_results`(`Quest_ID`, `ResultValue`, `UserIP`, `Lat`, `Lon`, `TimeSt`) VALUES (10,'".$options3."','".$ip."','".$lat."','".$lon."','".$date."')";
+        if(mysql_query( $sql, $db ))
+            {
+            }
+            else{
+                echo "<script>alter('Something Went Wrong');</script>";
+            }
+        
+        $sql="INSERT INTO `tbl_ex_results`(`Quest_ID`, `ResultValue`, `UserIP`, `Lat`, `Lon`, `TimeSt`) VALUES (11,'".$options4."','".$ip."','".$lat."','".$lon."','".$date."')";
+        if(mysql_query( $sql, $db ))
+            {
+            }
+            else{
+                echo "<script>alter('Something Went Wrong');</script>";
+            }
+        
+        $sql="INSERT INTO `tbl_ex_results`(`Quest_ID`, `ResultValue`, `UserIP`, `Lat`, `Lon`, `TimeSt`) VALUES (12,'".$options5."','".$ip."','".$lat."','".$lon."','".$date."')";
+        if(mysql_query( $sql, $db ))
+            {
+            }
+            else{
+                echo "<script>alter('Something Went Wrong');</script>";
+            }
+        
+        $sql="INSERT INTO `tbl_ex_results`(`Quest_ID`, `ResultValue`, `UserIP`, `Lat`, `Lon`, `TimeSt`) VALUES (13,'".$options6."','".$ip."','".$lat."','".$lon."','".$date."')";
+        if(mysql_query( $sql, $db ))
+            {
+            }
+            else{
+                echo "<script>alter('Something Went Wrong');</script>";
+            }
+        
+        $sql="INSERT INTO `tbl_ex_results`(`Quest_ID`, `ResultValue`, `UserIP`, `Lat`, `Lon`, `TimeSt`) VALUES (14,'".$options7."','".$ip."','".$lat."','".$lon."','".$date."')";
+        if(mysql_query( $sql, $db ))
+            {
+            }
+            else{
+                echo "<script>alter('Something Went Wrong');</script>";
+            }
+        
+        $sql="INSERT INTO `tbl_ex_results`(`Quest_ID`, `ResultValue`, `UserIP`, `Lat`, `Lon`, `TimeSt`) VALUES (15,'".$options8."','".$ip."','".$lat."','".$lon."','".$date."')";
+        if(mysql_query( $sql, $db ))
+            {
+            }
+            else{
+                echo "<script>alter('Something Went Wrong');</script>";
+            }
+        
+        $sql="INSERT INTO `tbl_ex_results`(`Quest_ID`, `ResultValue`, `UserIP`, `Lat`, `Lon`, `TimeSt`) VALUES (16,'".$options9."','".$ip."','".$lat."','".$lon."','".$date."')";
+        if(mysql_query( $sql, $db ))
+            {
+            }
+            else{
+                echo "<script>alter('Something Went Wrong');</script>";
+            }
+        
+        $sql="INSERT INTO `tbl_ex_results`(`Quest_ID`, `ResultValue`, `UserIP`, `Lat`, `Lon`, `TimeSt`) VALUES (17,'".$options10."','".$ip."','".$lat."','".$lon."','".$date."')";
+        if(mysql_query( $sql, $db ))
+            {
+            }
+            else{
+                echo "<script>alter('Something Went Wrong');</script>";
+            }
+
+        /*$sql="INSERT INTO `tbl_ex_results`(`Quest_ID`, `ResultValue`, `UserIP`, `Lat`, `Lon`, `TimeSt`) VALUES (1,'".$options."','".$ip."','".$lat."','".$lon."','".$date."')";
         if($db->exec($sql))
             {
             }
@@ -216,9 +332,12 @@
             else{
                 echo "<script>alter('Something Went Wrong');</script>";
             }
-            
-}
+          */  
+    }
     
+    function insert_Reg_Info(){
+
+    }
 
     function calc_results()
     {
