@@ -5,6 +5,7 @@
     include_once "navbar.php";
 ?>
 
+
 <!--chating part -->
 <script src="//code.tidio.co/ahtxzk8g4feko8u3z6c6ont9srshl5oe.js" async></script>
 
@@ -26,6 +27,7 @@
                     <div class="form-input ml-5 mb-5">
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-6"><label for="username">الاسم</label></div>
+
                             <div class="col-lg-6 col-md-6 col-sm-6"><input type="text" placeholder="أدخل اسمك...."
                                     id="username" name="username" class="float-right"></div>
                         </div>
