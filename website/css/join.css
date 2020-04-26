@@ -1,3 +1,11 @@
+body {
+    background-color: white;
+}
+
+.regSection {
+    background-color: white;
+}
+
 .form-valid {
     opacity: 0.5;
 }
@@ -5,4 +13,8 @@
 .form-control-label abbr {
     text-decoration: none;
     font-weight: normal;
+}
+
+#bootstrapForm {
+    box-shadow: 0px 3px 3px 0px rgba(255, 255, 255, 0.5);
 }

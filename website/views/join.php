@@ -3,7 +3,7 @@
     include_once "../init.php";
     include_once "navbar.php";
 ?>
-
+<section class="regSection pt-5 pb-5 mt-5 mb-5">
 <div class="container my-5">  
     <h3>مصر أدها</h3>
         <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLSelectElement/checkValidity">إنضم إلي مجتمع مصر أدها لتكون من فريق العمل</a></p>
@@ -52,7 +52,7 @@
     </div>
 </div>
   
-
+</section>
   
 
 

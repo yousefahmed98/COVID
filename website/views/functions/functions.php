@@ -1,5 +1,6 @@
 <?php
 
+
     function get_Date(){
         date_default_timezone_get();
         $date = date('m/d/Y h:i:s a', time());
@@ -356,6 +357,7 @@
         $healthResult=$checked_count/100;
         return $healthResult ;
     }
+
     // Get Title of Pages
     function getTitle(){
         global $PageTitle;

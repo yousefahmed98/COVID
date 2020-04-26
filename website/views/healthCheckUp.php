@@ -16,6 +16,11 @@ if(isset($_GET['submit'])){
         }
 }
 
+
+    if(isset($_GET['submit'])){
+        //Code Here For Questions insertion.
+        //TODO Heba Part
+    }
     
 ?>
 
@@ -35,9 +40,9 @@ if(isset($_GET['submit'])){
                                     <div class="col-md-4">
                                         <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                             <label class="btn btn-success active p-3">
-                                            <input type="radio" name="options" autocomplete="off" id="male" value="ذكر">ذكر</label>
+                                            <input type="radio" name="options" autocomplete="off" id="male">ذكر</label>
                                             <label class="btn btn-danger p-3">
-                                            <input type="radio" name="options" autocomplete="off" id="female" value="أنثى">أنثى</label>
+                                            <input type="radio" name="options" autocomplete="off" id="female">أنثى</label>
                                         </div>
                                     </div>
                                 </div>
@@ -47,7 +52,7 @@ if(isset($_GET['submit'])){
                                         <label class="control-label"><strong style="font-size: 25px; text-decoration: underline;">سنة الميلاد</strong></label>
                                     </div>
                                     <div class="col-md-4">
-                                        <input class="form-control" type="text" placeholder="إضغط هنا لتختار التاريخ" id="datepicker" name="Birthdate" required></div>
+                                        <input class="form-control" type="text" placeholder="إضغط هنا لتختار التاريخ" id="datepicker" required></div>
                                     </div>
                                     <br />
                                     <div class="row">
@@ -56,10 +61,10 @@ if(isset($_GET['submit'])){
                                         <div class="col-md-4">
                                         <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                             <label class="btn btn-success active p-3">
-                                                <input type="radio" name="options1" autocomplete="off" id="smokeNo" value="لا">لا
+                                                <input type="radio" name="options1" autocomplete="off" id="smokeNo">لا
                                             </label>
                                             <label class="btn btn-danger p-3">
-                                                <input type="radio" name="options1" autocomplete="off" id="smokeYes" value="نعم">نعم
+                                                <input type="radio" name="options1" autocomplete="off" id="smokeYes">نعم
                                             </label>
                                         </div>
                                     </div>
@@ -71,11 +76,11 @@ if(isset($_GET['submit'])){
                                         <div class="col-md-4">
                                             <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                                 <label class="btn btn-success active p-3">
-                                                    <input type="radio" name="options2" autocomplete="off" id="pastNo" value="لا">
+                                                    <input type="radio" name="options2" autocomplete="off" id="pastNo">
                                                     لا
                                                 </label>
                                                 <label class="btn btn-danger p-3">
-                                                    <input type="radio" name="options2" autocomplete="off" id="pastYes" value="نعم">
+                                                    <input type="radio" name="options2" autocomplete="off" id="pastYes">
                                                     نعم
                                                 </label>
                                             </div>
@@ -100,29 +105,29 @@ if(isset($_GET['submit'])){
                                     <div class="row mr-5">
                                         <div class="col-md-12">
                                                 <div class="custom-control custom-checkbox">
-                                                    <input class="custom-control-input" type="checkbox" id="custom1" name="custom1[]" value="صعوبة شديدة بالتنفس">
+                                                    <input class="custom-control-input" type="checkbox" id="custom1" value="option1">
                                                     <label class="custom-control-label" for="custom1">صعوبة شديدة بالتنفس (انقطاع او تسارع النفس)</label>
                                                 </div>
                                                 <div class="custom-control custom-checkbox">
-                                                    <input class="custom-control-input" type="checkbox" id="custom2"  name="custom1[]" value="ألم مستمر في الصدر">
+                                                    <input class="custom-control-input" type="checkbox" id="custom2" value="option2">
                                                     <label for="custom2" class="custom-control-label">
                                                         ألم مستمر في الصدر
                                                     </label>
                                                 </div>
                                                 <div class="custom-control custom-checkbox">
-                                                    <input class="custom-control-input" type="checkbox" id="custom3" name="custom1[]" value="زرقة الشفاه أو الوجه">
+                                                    <input class="custom-control-input" type="checkbox" id="custom3" value="option3">
                                                     <label for="custom3" class="custom-control-label">
                                                         زرقة الشفاه أو الوجه
                                                     </label>
                                                 </div>
                                                 <div class="custom-control custom-checkbox">
-                                                    <input class="custom-control-input" type="checkbox" id="custom4" name="custom1[]" value=" ارهاق شديد و عدم القدرة على النهوض">
+                                                    <input class="custom-control-input" type="checkbox" id="custom4" value="option4">
                                                     <label for="custom4" class="custom-control-label">
                                                         ارهاق شديد و عدم القدرة على النهوض
                                                     </label>
                                                 </div>
                                                 <div class="custom-control custom-checkbox">
-                                                    <input class="custom-control-input" type="checkbox" id="custom5" name="custom1[]" value="لا شيء مما ذكر">
+                                                    <input class="custom-control-input" type="checkbox" id="custom5" value="option5">
                                                     <label for="custom5" class="custom-control-label">
                                                         لا شيء مما ذكر
                                                     </label>
@@ -140,43 +145,43 @@ if(isset($_GET['submit'])){
                                             <div class="row mr-5">
                                                 <div class="col-md-4">
                                                 <div class="custom-control custom-checkbox">
-                                                    <input class="custom-control-input" type="checkbox" id="custom6" name="custom2[]" value="حمى">
+                                                    <input class="custom-control-input" type="checkbox" id="custom6" value="option10">
                                                     <label for="custom6" class="custom-control-label">
                                                         حمى
                                                     </label>
                                                 </div>
                                                 <div class="custom-control custom-checkbox">
-                                                    <input class="custom-control-input" type="checkbox" id="custom7" name="custom2[]" value="سعال جاف">
+                                                    <input class="custom-control-input" type="checkbox" id="custom7" value="option11">
                                                     <label for="custom7" class="custom-control-label">
                                                         سعال جاف
                                                     </label>
                                                 </div>
                                                 <div class="custom-control custom-checkbox">
-                                                    <input class="custom-control-input" type="checkbox" id="custom8" name="custom2[]" value="صداع">
+                                                    <input class="custom-control-input" type="checkbox" id="custom8" value="option12">
                                                     <label for="custom8" class="custom-control-label">
                                                         صداع
                                                     </label>
                                                 </div>
                                                 <div class="custom-control custom-checkbox">
-                                                    <input class="custom-control-input" type="checkbox" id="custom9" name="custom2[]" value="اجهاد او ارهاق عام">
+                                                    <input class="custom-control-input" type="checkbox" id="custom9" value="option13">
                                                     <label for="custom9" class="custom-control-label">
                                                         اجهاد او ارهاق عام
                                                     </label>
                                                 </div>
                                                 <div class="custom-control custom-checkbox">
-                                                    <input class="custom-control-input" type="checkbox" id="custom10" name="custom2[]" value="صعوبة خفيفة او متوسطة بالتنفس">
+                                                    <input class="custom-control-input" type="checkbox" id="custom10" value="option14">
                                                     <label for="custom10" class="custom-control-label">
                                                         صعوبة خفيفة او متوسطة بالتنفس
                                                     </label>
                                                 </div>
                                                 <div class="custom-control custom-checkbox">
-                                                    <input class="custom-control-input" type="checkbox" id="custom11" name="custom2[]" value="الم في العظام">
+                                                    <input class="custom-control-input" type="checkbox" id="custom11" value="option15">
                                                     <label for="custom11" class="custom-control-label">
                                                         الم في العظام
                                                     </label>
                                                 </div>
                                                 <div class="custom-control custom-checkbox">
-                                                    <input class="custom-control-input" type="checkbox" id="custom12" name="custom2[]" value="ألم في الحلق">
+                                                    <input class="custom-control-input" type="checkbox" id="custom12" value="option16">
                                                     <label for="custom12" class="custom-control-label">
                                                         ألم في الحلق
                                                     </label>
@@ -184,43 +189,43 @@ if(isset($_GET['submit'])){
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="custom-control custom-checkbox">
-                                                    <input class="custom-control-input" type="checkbox" id="custom13" name="custom2[]" value="إسهال">
+                                                    <input class="custom-control-input" type="checkbox" id="custom13" value="option17">
                                                     <label for="custom13" class="custom-control-label">
                                                         إسهال
                                                     </label>
                                                 </div>
                                                 <div class="custom-control custom-checkbox">
-                                                    <input class="custom-control-input" type="checkbox" id="custom14" name="custom2[]" value="قشعريرة"> 
+                                                    <input class="custom-control-input" type="checkbox" id="custom14" value="option18"> 
                                                     <label for="custom14" class="custom-control-label">
                                                         قشعريرة
                                                     </label>
                                                 </div>
                                                 <div class="custom-control custom-checkbox">
-                                                    <input class="custom-control-input" type="checkbox" id="custom15" name="custom2[]" value="غثيان">
+                                                    <input class="custom-control-input" type="checkbox" id="custom15" value="option19">
                                                     <label for="custom15" class="custom-control-label">
                                                         غثيان
                                                     </label>
                                                 </div>
                                                 <div class="custom-control custom-checkbox">
-                                                    <input class="custom-control-input" type="checkbox" id="custom16" name="custom2[]" value="احتقان في الانف">
+                                                    <input class="custom-control-input" type="checkbox" id="custom16" value="option20">
                                                     <label for="custom16" class="custom-control-label">
                                                         احتقان في الانف
                                                     </label>
                                                 </div>
                                                 <div class="custom-control custom-checkbox">
-                                                    <input class="custom-control-input" type="checkbox" id="custom17" name="custom2[]" value="استفراغ">
+                                                    <input class="custom-control-input" type="checkbox" id="custom17" value="option21">
                                                     <label for="custom17" class="custom-control-label">
                                                         استفراغ
                                                     </label>
                                                 </div>
                                                 <div class="custom-control custom-checkbox">
-                                                    <input class="custom-control-input" type="checkbox" id="custom18" name="custom2[]" value="بلغم مع دم">
+                                                    <input class="custom-control-input" type="checkbox" id="custom18" value="option22">
                                                     <label for="custom18" class="custom-control-label">
                                                         بلغم مع دم
                                                     </label>
                                                 </div>
                                                 <div class="custom-control custom-checkbox">
-                                                    <input class="custom-control-input" type="checkbox" id="custom19" name="custom2[]" value="دوار">
+                                                    <input class="custom-control-input" type="checkbox" id="custom19" value="option23">
                                                     <label for="custom19" class="custom-control-label">
                                                         دوار (دوخة)
                                                     </label>
@@ -228,43 +233,43 @@ if(isset($_GET['submit'])){
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="custom-control custom-checkbox">
-                                                    <input class="custom-control-input" type="checkbox" id="custom20" name="custom2[]" value="الم في العضلات">
+                                                    <input class="custom-control-input" type="checkbox" id="custom20" value="option24">
                                                     <label for="custom20" class="custom-control-label">
                                                         الم في العضلات
                                                     </label>
                                                 </div>
                                                 <div class="custom-control custom-checkbox">
-                                                    <input class="custom-control-input" type="checkbox" id="custom21" name="custom2[]" value="فقدان الشهية">
+                                                    <input class="custom-control-input" type="checkbox" id="custom21" value="option25">
                                                     <label for="custom21" class="custom-control-label">
                                                         فقدان الشهية
                                                     </label>
                                                 </div>
                                                 <div class="custom-control custom-checkbox">
-                                                    <input class="custom-control-input" type="checkbox" id="custom22" name="custom2[]" value="فقدان حاسة الشم">
+                                                    <input class="custom-control-input" type="checkbox" id="custom22" value="option26">
                                                     <label for="custom22" class="custom-control-label">
                                                         فقدان حاسة الشم
                                                     </label>
                                                 </div>
                                                 <div class="custom-control custom-checkbox">
-                                                    <input class="custom-control-input" type="checkbox" id="custom23" name="custom2[]" value="فقدان حاسة الذوق">
+                                                    <input class="custom-control-input" type="checkbox" id="custom23" value="option27">
                                                     <label for="custom23" class="custom-control-label">
                                                         فقدان حاسة الذوق
                                                     </label>
                                                 </div>
                                                 <div class="custom-control custom-checkbox">
-                                                    <input class="custom-control-input" type="checkbox" id="custom24" name="custom2[]" value="انتفاخ العين">
+                                                    <input class="custom-control-input" type="checkbox" id="custom24" value="option28">
                                                     <label for="custom24" class="custom-control-label">
                                                         انتفاخ العين
                                                     </label>
                                                 </div>
                                                 <div class="custom-control custom-checkbox">
-                                                    <input class="custom-control-input" type="checkbox" id="custom25" name="custom2[]" value="احمرار بالعين">
+                                                    <input class="custom-control-input" type="checkbox" id="custom25" value="option29">
                                                     <label for="custom25" class="custom-control-label">
                                                         احمرار بالعين
                                                     </label>
                                                 </div>
                                                 <div class="custom-control custom-checkbox">
-                                                    <input class="custom-control-input" type="checkbox" id="custom26" name="custom2[]" value="لا شيء مما ذكر">
+                                                    <input class="custom-control-input" type="checkbox" id="custom26" value="option30">
                                                     <label for="custom26" class="custom-control-label">
                                                         لا شيء مما ذكر
                                                     </label>
@@ -286,11 +291,11 @@ if(isset($_GET['submit'])){
                                             <div class="col-md-4">
                                                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                                     <label class="btn btn-success active p-3">
-                                                        <input type="radio" name="options3" id="daysNo" autocomplete="off" value="لا">
+                                                        <input type="radio" name="options3" id="daysNo" autocomplete="off">
                                                         لا
                                                     </label>
                                                     <label class="btn btn-danger p-3">
-                                                        <input type="radio" name="options3" id="daysYes" autocomplete="off" value="نعم">
+                                                        <input type="radio" name="options3" id="daysYes" autocomplete="off">
                                                         نعم
                                                     </label>
 
@@ -311,11 +316,11 @@ if(isset($_GET['submit'])){
                                             <div class="col-md-4">
                                                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                                     <label class="btn btn-success active p-3">
-                                                        <input type="radio" name="options4" id="cliNo" autocomplete="off" value="لا">
+                                                        <input type="radio" name="options4" id="cliNo" autocomplete="off">
                                                         لا
                                                     </label>
                                                     <label class="btn btn-danger p-3">
-                                                        <input type="radio" name="options4" id="cliYes" autocomplete="off" value="نعم">
+                                                        <input type="radio" name="options4" id="cliYes" autocomplete="off">
                                                         نعم
                                                     </label>
 
@@ -336,11 +341,11 @@ if(isset($_GET['submit'])){
                                             <div class="col-md-4">
                                                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                                     <label class="btn btn-success active p-3">
-                                                        <input type="radio" name="options5" id="plaNo" autocomplete="off" value="لا">
+                                                        <input type="radio" name="options5" id="plaNo" autocomplete="off">
                                                         لا
                                                     </label>
                                                     <label class="btn btn-danger p-3">
-                                                        <input type="radio" name="options5" id="plaYes" autocomplete="off" value="نعم">
+                                                        <input type="radio" name="options5" id="plaYes" autocomplete="off">
                                                         نعم
                                                     </label>
 
@@ -361,11 +366,11 @@ if(isset($_GET['submit'])){
                                             <div class="col-md-4">
                                                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                                     <label class="btn btn-success active p-3">
-                                                        <input type="radio" name="options6" id="attNo" autocomplete="off" value="لا">
+                                                        <input type="radio" name="options6" id="attNo" autocomplete="off">
                                                         لا
                                                     </label>
                                                     <label class="btn btn-danger p-3">
-                                                        <input type="radio" name="options6" id="attYes" autocomplete="off" value="نعم">
+                                                        <input type="radio" name="options6" id="attYes" autocomplete="off">
                                                         نعم
                                                     </label>
 
@@ -386,11 +391,11 @@ if(isset($_GET['submit'])){
                                             <div class="col-md-4">
                                                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                                     <label class="btn btn-success active p-3">
-                                                        <input type="radio" name="options7" id="virNo" autocomplete="off" value="لا">
+                                                        <input type="radio" name="options7" id="virNo" autocomplete="off">
                                                         لا
                                                     </label>
                                                     <label class="btn btn-danger p-3">
-                                                        <input type="radio" name="options7" id="virYes" autocomplete="off" value="نعم">
+                                                        <input type="radio" name="options7" id="virYes" autocomplete="off">
                                                         نعم
                                                     </label>
 
@@ -411,11 +416,11 @@ if(isset($_GET['submit'])){
                                             <div class="col-md-4">
                                                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                                     <label class="btn btn-success active p-3">
-                                                        <input type="radio" name="options8" id="hosNo" autocomplete="off" value="لا">
+                                                        <input type="radio" name="options8" id="hosNo" autocomplete="off">
                                                         لا
                                                     </label>
                                                     <label class="btn btn-danger p-3">
-                                                        <input type="radio" name="options8" id="hosYes" autocomplete="off" value="نعم">
+                                                        <input type="radio" name="options8" id="hosYes" autocomplete="off">
                                                         نعم
                                                     </label>
 
@@ -437,11 +442,11 @@ if(isset($_GET['submit'])){
                                             <div class="col-md-4">
                                                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                                     <label class="btn btn-success active p-3">
-                                                        <input type="radio" name="options9" id="rpNo" autocomplete="off" value="لا">
+                                                        <input type="radio" name="options9" id="rpNo" autocomplete="off">
                                                         لا
                                                     </label>
                                                     <label class="btn btn-danger p-3">
-                                                        <input type="radio" name="options9" id="rpYes" autocomplete="off" value="نعم">
+                                                        <input type="radio" name="options9" id="rpYes" autocomplete="off">
                                                         نعم
                                                     </label>
 
@@ -463,11 +468,11 @@ if(isset($_GET['submit'])){
                                             <div class="col-md-4">
                                                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                                     <label class="btn btn-success active p-3">
-                                                        <input type="radio" name="options10" id="breNo" autocomplete="off" value="لا">
+                                                        <input type="radio" name="options10" id="breNo" autocomplete="off">
                                                         لا
                                                     </label>
                                                     <label class="btn btn-danger p-3">
-                                                        <input type="radio" name="options10" id="breYes" autocomplete="off" value="نعم">
+                                                        <input type="radio" name="options10" id="breYes" autocomplete="off">
                                                         نعم
                                                     </label>
 
@@ -480,13 +485,12 @@ if(isset($_GET['submit'])){
                                 <!-- /.card -->
                             </div>
                         </div>
-                         <br>
-                         <br>
+                         
                 <hr class="style12">
                     <div class="row">
-                        <div class="align-self-center mx-auto">
+                        <div class="align-self-center mx-auto mt-3 pt-2">
                             <div class="btn-group" role="group" aria-label="Basic example">
-                                <button type="submit" class="btn btn-outline-success btn-lg" name="submit">
+                                <button type="button" class="btn btn-outline-success btn-lg pt-2 pb-2 pr-5 pl-5" name="submit" onclick="location.href='checkDone.php';">
                                 <i class="fas fa-thumbs-up"></i><br />طمنى</button>                                  
                             </div>
                         </div>
@@ -494,7 +498,6 @@ if(isset($_GET['submit'])){
                 </form>
             </section>
         </div>
-    <br />
 
 <div class="modal fade" id="Quest" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
   <div class="modal-dialog modal-xl">

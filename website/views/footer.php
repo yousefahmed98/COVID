@@ -136,6 +136,7 @@
         <script>AOS.init(100);</script>
         <script src="../js/navbar.js"></script>
         <script src="../js/quet.js"></script>
+        <script src="../js/about.js"></script>
         </div>
     </body>
 </html>
