@@ -3,6 +3,7 @@
     include_once "../init.php";
     include_once "navbar.php";
 ?>
+<script src="//code.tidio.co/ahtxzk8g4feko8u3z6c6ont9srshl5oe.js" async></script>
 <div class="d-md-flex h-md-100 align-items-center">
     <div class="col-md-6 p-0 bg-indigo h-md-100">
         <div class="text-white d-md-flex align-items-center h-100 p-5 text-center justify-content-center">
@@ -46,6 +47,7 @@
         </div>
     </div>    
 </div>
+
 <style>
     @media (min-width: 768px) {
         .h-md-100 { height: 100vh; }

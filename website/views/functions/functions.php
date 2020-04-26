@@ -1,5 +1,14 @@
 <?php
 
+function redirect($url){
+    if (headers_sent()){
+      die('<script type="text/javascript">window.location=\''.$url.'\';</script‌​>');
+    }else{
+      header('Location: ' . $url);
+      die();
+    }    
+}
+
     function get_Date(){
         date_default_timezone_get();
         $date = date('m/d/Y h:i:s a', time());

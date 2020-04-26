@@ -6,14 +6,17 @@
     include "../date.php";
    
 if(isset($_GET['submit'])){
+    
     if(validate())
     {
-        $sickness_value=calc_results();
+        $sickness_value=calc_sickness();
         //insert_quest();
-        header("Location:checkDone.php?sickness_value=".$sickness_value."");
+        //redirect('checkDone.php');
+        header("Location:checkDone.php? sickness_value = $sickness_value");
+        die();
     }else{
         echo "<script> alert('Enter All Data'); </script>";
-        }
+    }
 }
 
     
