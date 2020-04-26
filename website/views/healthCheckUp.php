@@ -4,13 +4,11 @@
     include_once "navbar.php";
     include "../db.php";
     include "../date.php";
-    session_start();
    
 if(isset($_GET['submit'])){
     if(validate())
     {
         $sickness_value=calc_sickness();
-        $_SESSION["sickness"] = $sickness_value;
         insert_quest();
         header("Location:checkDone.php? sickness = $sickness_value");
         die();

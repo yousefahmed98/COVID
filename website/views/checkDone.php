@@ -3,6 +3,8 @@
     $PageTitle = "أطمن علي صحتك";
     include_once "../init.php";
     include_once "navbar.php";
+
+    $sickness=$_GET["sickness"];
 ?>
 
 <!--chating part -->
@@ -21,7 +23,7 @@
     <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-6 rightSection no-padding">
             <div class="formModel w-100 tempCard">
-                <form name="FormReg" class="w-100 action="saveRegInfo.php" method="post" onsubmit="return validateRegForm();">
+                <form name="FormReg" class="w-100" action="saveRegInfo.php?sick=<?php print($sickness);?>"  method="post" onsubmit="return validateRegForm();">
                     <h1 class="text-center">تسجيل </h1>
                     <div class="form-input ml-5 mb-5">
                         <div class="row">

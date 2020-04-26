@@ -342,14 +342,11 @@ function redirect($url){
             else{
                 echo "<script>alter('Something Went Wrong');</script>";
             }       
-}
+        }
 
           */  
     }
     
-    function insert_Reg_Info(){
-
-    }
 
     function calc_sickness()
     {
@@ -368,6 +365,7 @@ function redirect($url){
         $healthResult=$checked_count;
         return $healthResult ;
     }
+    
     // Get Title of Pages
     function getTitle(){
         global $PageTitle;
