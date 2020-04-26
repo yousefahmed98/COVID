@@ -1,7 +1,7 @@
 <?php
     $PageTitle = "إختبار صحتك";
     include '../init.php';
-    include_once "navbar.php";
+    //include_once "navbar.php";
     include "../db.php";
     
    
@@ -9,7 +9,7 @@ if(isset($_GET['submit'])){
     if(validate())
     {
         $sickness_value=calc_sickness();
-        insert_quest();
+        //insert_quest();
         header("Location:checkDone.php? sickness = $sickness_value");
 
         die();
@@ -20,7 +20,6 @@ if(isset($_GET['submit'])){
 
     
 ?>
-
 <section class="content" style="overflow: hidden;">
     <form method="GET" action="<?php echo $_SERVER['PHP_SELF'];?>" name="checkUpForm">
         <div class="container-fluid">
@@ -40,10 +39,12 @@ if(isset($_GET['submit'])){
                                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                         <label class="btn btn-success active p-3">
                                             <input type="radio" name="options" id="option1" value="ذكر"
-                                                autocomplete="off">
-                                            <label class="btn btn-danger p-3">
-                                                <input type="radio" name="options" id="option2" value="أنثى"
-                                                    autocomplete="off">
+                                                autocomplete="off">ذكر
+                                        </label>
+                                        <label class="btn btn-danger p-3">
+                                            <input type="radio" name="options" id="option2" value="أنثى"
+                                                autocomplete="off">أنثي
+                                        </label>
                                     </div>
                                 </div>
                             </div>
@@ -56,20 +57,23 @@ if(isset($_GET['submit'])){
                                 </div>
                                 <div class="col-md-4">
                                     <input class="form-control" type="text" name="Birthdate"
-                                        placeholder="click to show datepicker" id="datepicker">
+                                            placeholder="click to show datepicker" id="datepicker">
                                 </div>
+                            </div>
                                 <br />
                                 <div class="row">
                                     <div class="col-md-8">
-                                        <label class="control-label"><strong
-                                                style="font-size: 25px; text-decoration: underline;">هل أنت
-                                                مدخن</strong></label></div>
+                                        <label class="control-label">
+                                            <strong style="font-size: 25px; text-decoration: underline;">هل أنت
+                                                مدخن
+                                            </strong>
+                                        </label>
+                                    </div>
                                     <div class="col-md-4">
                                         <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                             <label class="btn btn-success active p-3">
                                                 <input type="radio" name="options1" id="option1" value="لا"
                                                     autocomplete="off">لا
-
                                             </label>
                                             <label class="btn btn-danger p-3">
                                                 <input type="radio" name="options1" id="option2" value="نعم"
@@ -346,8 +350,6 @@ if(isset($_GET['submit'])){
 
                                         </div>
                                     </div>
-
-
                                 </div>
                                 <br />
 

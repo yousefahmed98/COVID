@@ -19,6 +19,8 @@ function redirect($url){
 
     function validate()
     {
+            global $options, $Birthdate, $options1, $options2;
+
             if(!empty($_GET["options"])) $options=$_GET["options"];
            if(!empty($_GET["Birthdate"])) $Birthdate=$_GET["Birthdate"];
            if(!empty($_GET["options1"])) $options1=$_GET["options1"];
