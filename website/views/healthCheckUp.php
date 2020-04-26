@@ -3,8 +3,6 @@
     include '../init.php';
     include_once "navbar.php";
     include "../db.php";
-    
-    
    
 if(isset($_GET['submit'])){
     if(validate())
