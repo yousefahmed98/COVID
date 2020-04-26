@@ -4,40 +4,21 @@
     include_once "navbar.php";
     include "../db.php";
     include "../date.php";
+    session_start();
    
 if(isset($_GET['submit'])){
     if(validate())
     {
-        $sick=calc_results();
+        $sickness_value=calc_sickness();
+        $_SESSION["sickness"] = $sickness_value;
         insert_quest();
-        header("Location:checkDone.php?sick=".$sick."");
+        header("Location:checkDone.php? sickness = $sickness_value");
+        die();
     }else{
         echo "<script> alert('ادخل كل البيانات المطلوبة'); </script>";
         }
 }
 
-
-    include "../db.php";
-    include "../date.php";
-   
-if(isset($_GET['submit'])){
-    
-    if(validate())
-    {
-        $sickness_value=calc_sickness();
-        //insert_quest();
-        //redirect('checkDone.php');
-        header("Location:checkDone.php? sickness_value = $sickness_value");
-        die();
-    }else{
-        echo "<script> alert('Enter All Data'); </script>";
-    }
-}
-
-    if(isset($_GET['submit'])){
-        //Code Here For Questions insertion.
-        //TODO Heba Part
-    }
     
 ?>
 

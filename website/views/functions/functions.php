@@ -351,7 +351,7 @@ function redirect($url){
 
     }
 
-    function function calc_sickness()
+    function calc_sickness()
     {
 
         $checked_count=0;
