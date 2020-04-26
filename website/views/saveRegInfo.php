@@ -10,6 +10,10 @@ echo $email;
 echo $phone;*/
 
 $ip =  getUserIp();
+if($ip=="")
+{
+    $ip="none";
+}
 //$result = $_COOKIE["sickness"];
 
 $result = 10;
@@ -21,8 +25,17 @@ $exam_id++;*/
 
 $exam_id=0;
 
-$sql="INSERT INTO `tbl_users`(`FullUsername`, `Email`, `Phone`, `IP`, `LastExamResult`, `LastExamID`, `TimeSt`) VALUES ("..","..","..","..",[value-6],[value-7],[value-8])";
+$ip=getUserIp();
+if($ip=="")
+    $ip="none";
 
+$sql="INSERT INTO `tbl_users`(`FullUsername`, `Email`, `Phone`, `IP`, `LastExamResult`, `LastExamID`, `TimeSt`) VALUES ('".$username."','".$email."','".$phone."','".$ip."','".$result."','".$exam_id."','".$date."')";
+
+if($db->exec($sql)){
+    echo"ok!!";
+}else{
+    echo "no";
+}
 
 
 ?>
