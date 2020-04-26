@@ -1,7 +1,7 @@
 <?php
     $PageTitle = "إختبار صحتك";
     include '../init.php';
-    //include_once "navbar.php";
+    include_once "navbar.php";
     include "../db.php";
     
    
@@ -9,9 +9,8 @@ if(isset($_GET['submit'])){
     if(validate())
     {
         $sickness_value=calc_sickness();
-        //insert_quest();
+        insert_quest();
         header("Location:checkDone.php? sickness = $sickness_value");
-
         die();
     }else{
         echo "<script> alert('ادخل كل البيانات المطلوبة'); </script>";
@@ -123,34 +122,34 @@ if(isset($_GET['submit'])){
                                 <div class="row mr-5">
                                     <div class="col-md-12">
                                         <div class="custom-control custom-checkbox">
-                                            <input class="custom-control-input" type="checkbox" id="customCheckbox1"
+                                            <input class="custom-control-input" type="checkbox" id="custom1"
                                                 name="check1" value="تسارع النفس">
                                             <label class="custom-control-label" for="custom1">صعوبة شديدة بالتنفس
                                                 (انقطاع او تسارع النفس)</label>
                                         </div>
                                         <div class="custom-control custom-checkbox">
-                                            <input class="custom-control-input" type="checkbox" id="customCheckbox2"
+                                            <input class="custom-control-input" type="checkbox" id="custom2"
                                                 name="check1" value="ألم مستمر في">
                                             <label for="custom2" class="custom-control-label">
                                                 ألم مستمر في الصدر
                                             </label>
                                         </div>
                                         <div class="custom-control custom-checkbox">
-                                            <input class="custom-control-input" type="checkbox" id="customCheckbox3"
+                                            <input class="custom-control-input" type="checkbox" id="custom3"
                                                 name="check1" value="زرقة الشفاه أو الوجه">
                                             <label for="custom3" class="custom-control-label">
                                                 زرقة الشفاه أو الوجه
                                             </label>
                                         </div>
                                         <div class="custom-control custom-checkbox">
-                                            <input class="custom-control-input" type="checkbox" id="customCheckbox4"
+                                            <input class="custom-control-input" type="checkbox" id="custom4"
                                                 name="check1" value="عدم القدرة على النهوض">
                                             <label for="custom4" class="custom-control-label">
                                                 ارهاق شديد و عدم القدرة على النهوض
                                             </label>
                                         </div>
                                         <div class="custom-control custom-checkbox">
-                                            <input class="custom-control-input" type="checkbox" id="customCheckbox5"
+                                            <input class="custom-control-input" type="checkbox" id="custom5"
                                                 name="check1" value="لا شيء مما ذكر">
                                             <label for="custom5" class="custom-control-label">
                                                 لا شيء مما ذكر
@@ -170,7 +169,7 @@ if(isset($_GET['submit'])){
                                     <div class="row mr-5">
                                         <div class="col-md-4">
                                             <div class="custom-control custom-checkbox">
-                                                <input class="custom-control-input" type="checkbox" id="customCheckbox6"
+                                                <input class="custom-control-input" type="checkbox" id="custom6"
                                                     name="check2" value="حمى">
                                                 <label for="custom6" class="custom-control-label">
                                                     حمى
@@ -178,20 +177,20 @@ if(isset($_GET['submit'])){
                                             </div>
                                             <div class="custom-control custom-checkbox">
                                                 <<input class="custom-control-input" type="checkbox"
-                                                    id="customCheckbox7" name="check2" value="سعال جاف">
+                                                    id="custom7" name="check2" value="سعال جاف">
                                                     <label for="custom7" class="custom-control-label">
                                                         سعال جاف
                                                     </label>
                                             </div>
                                             <div class="custom-control custom-checkbox">
-                                                <input class="custom-control-input" type="checkbox" id="customCheckbox8"
+                                                <input class="custom-control-input" type="checkbox" id="custom8"
                                                     name="check2" value="صداع">
                                                 <label for="custom8" class="custom-control-label">
                                                     صداع
                                                 </label>
                                             </div>
                                             <div class="custom-control custom-checkbox">
-                                                <input class="custom-control-input" type="checkbox" id="customCheckbox9"
+                                                <input class="custom-control-input" type="checkbox" id="custom9"
                                                     name="check2" value="ارهاق عام">
                                                 <label for="custom9" class="custom-control-label">
                                                     اجهاد او ارهاق عام
@@ -199,21 +198,21 @@ if(isset($_GET['submit'])){
                                             </div>
                                             <div class="custom-control custom-checkbox">
                                                 <input class="custom-control-input" type="checkbox"
-                                                    id="customCheckbox10" name="check2" value=" صعوبة خفيفة بالتنفس">
+                                                    id="custom10" name="check2" value=" صعوبة خفيفة بالتنفس">
                                                 <label for="custom10" class="custom-control-label">
                                                     صعوبة خفيفة او متوسطة بالتنفس
                                                 </label>
                                             </div>
                                             <div class="custom-control custom-checkbox">
                                                 <input class="custom-control-input" type="checkbox"
-                                                    id="customCheckbox11" name="check2" value="الم في العظام">
+                                                    id="custom11" name="check2" value="الم في العظام">
                                                 <label for="custom11" class="custom-control-label">
                                                     الم في العظام
                                                 </label>
                                             </div>
                                             <div class="custom-control custom-checkbox">
                                                 <input class="custom-control-input" type="checkbox"
-                                                    id="customCheckbox12" name="check2" value="ألم في الحلق">
+                                                    id="custom12" name="check2" value="ألم في الحلق">
                                                 <label for="custom12" class="custom-control-label">
                                                     ألم في الحلق
                                                 </label>
@@ -222,49 +221,49 @@ if(isset($_GET['submit'])){
                                         <div class="col-md-4">
                                             <div class="custom-control custom-checkbox">
                                                 <input class="custom-control-input" type="checkbox"
-                                                    id="customCheckbox13" name="check2" value="إسهال">
+                                                    id="custom13" name="check2" value="إسهال">
                                                 <label for="custom13" class="custom-control-label">
                                                     إسهال
                                                 </label>
                                             </div>
                                             <div class="custom-control custom-checkbox">
                                                 <input class="custom-control-input" type="checkbox"
-                                                    id="customCheckbox14" name="check2" value="قشعريرة">
+                                                    id="custom14" name="check2" value="قشعريرة">
                                                 <label for="custom14" class="custom-control-label">
                                                     قشعريرة
                                                 </label>
                                             </div>
                                             <div class="custom-control custom-checkbox">
                                                 <input class="custom-control-input" type="checkbox"
-                                                    id="customCheckbox15" name="check2" value="غثيان">
+                                                    id="custom15" name="check2" value="غثيان">
                                                 <label for="custom15" class="custom-control-label">
                                                     غثيان
                                                 </label>
                                             </div>
                                             <div class="custom-control custom-checkbox">
                                                 <input class="custom-control-input" type="checkbox"
-                                                    id="customCheckbox16" name="check2" value="احتقان في الانف">
+                                                    id="custom16" name="check2" value="احتقان في الانف">
                                                 <label for="custom16" class="custom-control-label">
                                                     احتقان في الانف
                                                 </label>
                                             </div>
                                             <div class="custom-control custom-checkbox">
                                                 <input class="custom-control-input" type="checkbox"
-                                                    id="customCheckbox17" name="check2" value="استفراغ">
+                                                    id="custom17" name="check2" value="استفراغ">
                                                 <label for="custom17" class="custom-control-label">
                                                     استفراغ
                                                 </label>
                                             </div>
                                             <div class="custom-control custom-checkbox">
                                                 <input class="custom-control-input" type="checkbox"
-                                                    id="customCheckbox18" name="check2" value="بلغم مع دم">
+                                                    id="custom18" name="check2" value="بلغم مع دم">
                                                 <label for="custom18" class="custom-control-label">
                                                     بلغم مع دم
                                                 </label>
                                             </div>
                                             <div class="custom-control custom-checkbox">
                                                 <input class="custom-control-input" type="checkbox"
-                                                    id="customCheckbox19" name="check2" value="دوار">
+                                                    id="custom19" name="check2" value="دوار">
                                                 <label for="custom19" class="custom-control-label">
                                                     دوار (دوخة)
                                                 </label>
@@ -273,49 +272,49 @@ if(isset($_GET['submit'])){
                                         <div class="col-md-4">
                                             <div class="custom-control custom-checkbox">
                                                 <input class="custom-control-input" type="checkbox"
-                                                    id="customCheckbox20" name="check2" value="الم في العضلات">
+                                                    id="custom20" name="check2" value="الم في العضلات">
                                                 <label for="custom20" class="custom-control-label">
                                                     الم في العضلات
                                                 </label>
                                             </div>
                                             <div class="custom-control custom-checkbox">
                                                 <input class="custom-control-input" type="checkbox"
-                                                    id="customCheckbox21" name="check2" value="فقدان الشهية">
+                                                    id="custom21" name="check2" value="فقدان الشهية">
                                                 <label for="custom21" class="custom-control-label">
                                                     فقدان الشهية
                                                 </label>
                                             </div>
                                             <div class="custom-control custom-checkbox">
                                                 <input class="custom-control-input" type="checkbox"
-                                                    id="customCheckbox22" name="check2" value="فقدان حاسة الشم">
+                                                    id="custom22" name="check2" value="فقدان حاسة الشم">
                                                 <label for="custom22" class="custom-control-label">
                                                     فقدان حاسة الشم
                                                 </label>
                                             </div>
                                             <div class="custom-control custom-checkbox">
                                                 <input class="custom-control-input" type="checkbox"
-                                                    id="customCheckbox23" name="check2" value="فقدان حاسة الذوق">
+                                                    id="custom23" name="check2" value="فقدان حاسة الذوق">
                                                 <label for="custom23" class="custom-control-label">
                                                     فقدان حاسة الذوق
                                                 </label>
                                             </div>
                                             <div class="custom-control custom-checkbox">
                                                 <input class="custom-control-input" type="checkbox"
-                                                    id="customCheckbox24" name="check2" value="انتفاخ العين">
+                                                    id="custom24" name="check2" value="انتفاخ العين">
                                                 <label for="custom24" class="custom-control-label">
                                                     انتفاخ العين
                                                 </label>
                                             </div>
                                             <div class="custom-control custom-checkbox">
                                                 <input class="custom-control-input" type="checkbox"
-                                                    id="customCheckbox25" name="check2" value="احمرار بالعين">
+                                                    id="custom25" name="check2" value="احمرار بالعين">
                                                 <label for="custom25" class="custom-control-label">
                                                     احمرار بالعين
                                                 </label>
                                             </div>
                                             <div class="custom-control custom-checkbox">
                                                 <input class="custom-control-input" type="checkbox"
-                                                    id="customCheckbox26" name="check2" value="لا شيء مما ذكر">
+                                                    id="custom26" name="check2" value="لا شيء مما ذكر">
                                                 <label for="custom26" class="custom-control-label">
                                                     لا شيء مما ذكر
                                                 </label>
