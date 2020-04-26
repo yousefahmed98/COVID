@@ -6,7 +6,6 @@
     debug($_COOKIE["sickness"]);
 ?>
 
-
 <!--chating part -->
 <script src="//code.tidio.co/ahtxzk8g4feko8u3z6c6ont9srshl5oe.js" async></script>
 
@@ -23,14 +22,12 @@
     <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-6 rightSection no-padding">
             <div class="formModel w-100 tempCard">
-                <form name="FormReg" action="" class="w-100">
+                <form name="FormReg" class="w-100 action="saveRegInfo.php" method="post" onsubmit="return validateRegForm();">
                     <h1 class="text-center">تسجيل </h1>
                     <div class="form-input ml-5 mb-5">
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-6"><label for="username">الاسم</label></div>
-
-                            <div class="col-lg-6 col-md-6 col-sm-6"><input type="text" placeholder="أدخل اسمك...."
-                                    id="username" name="username" class="float-right"></div>
+                            <div class="col-lg-6 col-md-6 col-sm-6"><input type="text" placeholder="أدخل اسمك...." id="username" name="username" class="float-right"></div>
                         </div>
                     </div>
                     <div class="form-input ml-5 mb-5">
@@ -79,7 +76,6 @@
         /*alert(username);
         alert(email);
         alert(phone);*/
-
 
         if(username==""||email==""||phone=="")
         {

@@ -1,6 +1,5 @@
 <?php
 
-
     /*$host = '188.121.44.187:3306';
     $user= 'egydb';
     $pass= 'Egypt@1234';
