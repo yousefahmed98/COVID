@@ -6,7 +6,6 @@ $username=$_POST["username"];
 $email=$_POST["email"];
 $phone=$_POST["phoneNumber"];
 
-
 $ip =  getUserIp();
 if($ip=="")
 {
@@ -28,7 +27,7 @@ if($ip=="")
 $sql="INSERT INTO `tbl_users`(`FullUsername`, `Email`, `Phone`, `IP`, `LastExamResult`, `LastExamID`, `TimeSt`) VALUES ('".$username."','".$email."','".$phone."','".$ip."','".$sick."','".$exam_id."','".$date."')";
 
 if(mysql_query( $sql, $db )){
-
+    header("location:https://api.whatsapp.com/send?phone=201554744111");
 }else{
     header("Location:checkDone.php? sickness = $sick");
 }
