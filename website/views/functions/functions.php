@@ -65,42 +65,44 @@ function redirect($url){
             //print($custom2A);
         }
 
-        if(!empty($_GET["options3"]){$options3=$_GET["options3"]};
+        if(!empty($_GET["options3"])){
+            $options3=$_GET["options3"];
+        }
         if($options3=="")
         {
             $options3="لا";
         }
-        if(!empty($_GET["options4"]){$options3=$_GET["options4"]};
+        if(!empty($_GET["options4"])){$options3=$_GET["options4"];};
         if($options4=="")
         {
             $options4="لا";
         }
-        if(!empty($_GET["options5"]){$options3=$_GET["options5"]};
+        if(!empty($_GET["options5"])){$options3=$_GET["options5"];};
         if($options5=="")
         {
             $options5="لا";
         }
-        if(!empty($_GET["options6"]){$options3=$_GET["options6"]};
+        if(!empty($_GET["options6"])){$options3=$_GET["options6"];};
         if($options6=="")
         {
             $options6="لا";
         }
-        if(!empty($_GET["options7"]){$options3=$_GET["options7"]};
+        if(!empty($_GET["options7"])){$options3=$_GET["options7"];};
         if($options7=="")
         {
             $options7="لا";
         }
-        if(!empty($_GET["options8"]){$options3=$_GET["options8"]};
+        if(!empty($_GET["options8"])){$options3=$_GET["options8"];};
         if($options8=="")
         {
             $options8="لا";
         }
-        if(!empty($_GET["options9"]){$options3=$_GET["options9"]};
+        if(!empty($_GET["options9"])){$options3=$_GET["options9"];};
         if($options9=="")
         {
             $options9="لا";
         }
-        if(!empty($_GET["options10"]){$options3=$_GET["options10"]};
+        if(!empty($_GET["options10"])){$options3=$_GET["options10"];};
         if($options10=="")
         {
             $options10="لا";
