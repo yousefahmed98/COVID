@@ -9,11 +9,10 @@
 if(isset($_GET['submit'])){
     if(validate())
     {
-        session_start();
         $sickness_value=calc_sickness();
         insert_quest();
-        setcookie('sickness', $sickness_value, time() + (86400 * 30), "/");
-        header("Location:checkDone.php");
+        header("Location:checkDone.php? sickness = $sickness_value");
+
         die();
     }else{
         echo "<script> alert('ادخل كل البيانات المطلوبة'); </script>";
