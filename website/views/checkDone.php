@@ -3,6 +3,7 @@
     include_once "../init.php";
     include_once "navbar.php";
 ?>
+
 <div class="container-fluid">
     <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-6 rightSection no-padding">
@@ -41,7 +42,8 @@
                 
             </div>
         </div>
-</div>
+    </div>
+
 <?php
     include_once "footer.php";
 ?>

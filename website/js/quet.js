@@ -11,6 +11,18 @@ $(document).ready(function() {
             $(this).removeClass('shadow-lg');
         }
     )
+    $("#aa1").click(function() {
+        $("#sociallist").toggleClass("remove");
+        $(".btnopenclose").toggleClass("as_selected");
+    });
+});
+$(window).on('scroll ', function() {
+    if ($(window).scrollTop() < 800) {
+        $('#socialarea').fadeOut();
+    }
+    if ($(window).scrollTop() > 900) {
+        $('#socialarea').fadeIn();
+    }
 });
 $("#bootstrapForm").submit(function(event) {
     var vForm = $(this);
