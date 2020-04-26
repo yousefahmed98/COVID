@@ -19,10 +19,10 @@ function redirect($url){
 
     function validate()
     {
-            $options=$_GET["options"];
-            $Birthdate=$_GET["Birthdate"];
-            $options1=$_GET["options1"];
-            $options2=$_GET["options2"];
+            if(!empty($_GET["options"])) $options=$_GET["options"];
+           if(!empty($_GET["Birthdate"])) $Birthdate=$_GET["Birthdate"];
+           if(!empty($_GET["options1"])) $options1=$_GET["options1"];
+           if(!empty($_GET["options2"])) $options2=$_GET["options2"];
             if($options==""||$Birthdate==""||$options1==""||$options2=="")
             {
                 return false;

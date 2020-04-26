@@ -3,16 +3,17 @@
     include '../init.php';
     include_once "navbar.php";
     include "../db.php";
-    include "../date.php";
-    session_start();
+    
+    
    
 if(isset($_GET['submit'])){
     if(validate())
     {
+        session_start();
         $sickness_value=calc_sickness();
-        $_SESSION["sickness"] = $sickness_value;
         insert_quest();
-        header("Location:checkDone.php? sickness = $sickness_value");
+        setcookie('sickness', $sickness_value, time() + (86400 * 30), "/");
+        header("Location:checkDone.php");
         die();
     }else{
         echo "<script> alert('ادخل كل البيانات المطلوبة'); </script>";
@@ -38,9 +39,9 @@ if(isset($_GET['submit'])){
                                     <div class="col-md-4">
                                         <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                             <label class="btn btn-success active p-3">
-                                            <input type="radio" name="options" autocomplete="off" id="male">ذكر</label>
+                                            <input type="radio" name="options1" id="option1" value="ذكر" autocomplete="off">
                                             <label class="btn btn-danger p-3">
-                                            <input type="radio" name="options" autocomplete="off" id="female">أنثى</label>
+                                            <input type="radio" name="options1" id="option2" value="أنثى" autocomplete="off">
                                         </div>
                                     </div>
                                 </div>
@@ -50,7 +51,7 @@ if(isset($_GET['submit'])){
                                         <label class="control-label"><strong style="font-size: 25px; text-decoration: underline;">سنة الميلاد</strong></label>
                                     </div>
                                     <div class="col-md-4">
-                                        <input class="form-control" type="text" placeholder="إضغط هنا لتختار التاريخ" id="datepicker" required></div>
+                                         <input class="form-control" type="text" name="date" placeholder="click to show datepicker" id="datepicker">
                                     </div>
                                     <br />
                                     <div class="row">
@@ -59,10 +60,11 @@ if(isset($_GET['submit'])){
                                         <div class="col-md-4">
                                         <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                             <label class="btn btn-success active p-3">
-                                                <input type="radio" name="options1" autocomplete="off" id="smokeNo">لا
+                                                <input type="radio" name="options2" id="option1" value ="لا" autocomplete="off">لا
+                                                    
                                             </label>
                                             <label class="btn btn-danger p-3">
-                                                <input type="radio" name="options1" autocomplete="off" id="smokeYes">نعم
+                                                <input type="radio" name="options2" id="option2" value ="نعم" autocomplete="off">نعم
                                             </label>
                                         </div>
                                     </div>
@@ -488,7 +490,7 @@ if(isset($_GET['submit'])){
                     <div class="row">
                         <div class="align-self-center mx-auto mt-3 pt-2">
                             <div class="btn-group" role="group" aria-label="Basic example">
-                                <button type="button" class="btn btn-outline-success btn-lg pt-2 pb-2 pr-5 pl-5" name="submit" onclick="location.href='checkDone.php';">
+                                <button type="submit" class="btn btn-outline-success btn-lg pt-2 pb-2 pr-5 pl-5" name="submit">
                                 <i class="fas fa-thumbs-up"></i><br />طمنى</button>                                  
                             </div>
                         </div>
