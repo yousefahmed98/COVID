@@ -1,4 +1,4 @@
-<div class="contanier-fluid">
+<div class="contanier-fluid mainController">
     <nav class="navbar navbar-expand-lg" id="navbar">
         <a class="navbar-brand" href="index.php"><strong>مصر أدها</strong></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,4 +47,14 @@
             </div>
         </div>
     </header>
-    
+    <section>
+        <div id="socialarea">
+            <ul id="sociallist">
+                <li class="facebook_social"> <a href="#" target="_new"><i class="fab fa-facebook"></i></a> </li>
+                <li class="twitter_social"> <a href="#" target="_new"><i class="fab fa-twitter"></i></a> </li>
+                <li class="googleplus_social"> <a href="#" target="_new"><i class="fab fa-google-plus"></i></a> </li>
+                <li class="pinterest_social"> <a href="#" target="_new"><i class="fab fa-pinterest-p"></i></a> </li>
+                <li class="linkedin_social"> <a href="#" target="_new"><i class="fab fa-linkedin"></i></a> </li>
+            </ul>
+        </div>
+    </section>
