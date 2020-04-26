@@ -19,6 +19,10 @@ if(isset($_GET['submit'])){
         }
 }
 
+    if(isset($_GET['submit'])){
+        //Code Here For Questions insertion.
+        //TODO Heba Part
+    }
     
 ?>
 
