@@ -23,7 +23,7 @@
     }
 
     function insert_quest(){
-        $db = new PDO("mysql:host=localhost;dbname=masr_adaha","root","12345678");
+       $db = new PDO("mysql:host=localhost;dbname=masr_adaha","root","12345678");
         if(isset($_COOKIE["latitude"]) && isset($_COOKIE["longitude"])){
             $lon=$_COOKIE["longitude"];
             $lat=$_COOKIE["latitude"];
@@ -220,21 +220,21 @@
 }
     
 
-    function calc_results()
+    function calc_sickness()
     {
 
         $checked_count=0;
         if(!empty($_GET['custom1'])) $checked_count = count($_GET['custom1'])*5;
         if(!empty($_GET['custom2']))$checked_count += count($_GET['custom2'])*2;
-        if($_GET['options3']=="نعم")$checked_count +=10;
-        if($_GET['options4']=="نعم")$checked_count +=5;
-        if($_GET['options5']=="نعم")$checked_count +=10;
-        if($_GET['options6']=="نعم")$checked_count +=5;
-        if($_GET['options7']=="نعم")$checked_count +=5;
-        if($_GET['options8']=="نعم")$checked_count +=2;
-        if($_GET['options9']=="نعم")$checked_count +=2;
-        if($_GET['options10']=="نعم")$checked_count +=1;
-        $healthResult=$checked_count/100;
+        if(!empty($_GET['options3'])) if( $_GET['options3']=="نعم") { $checked_count +=10;}
+        if(!empty($_GET['options3'])) if( $_GET['options3']=="نعم")$checked_count +=5;
+        if(!empty($_GET['options3'])) if( $_GET['options3']=="نعم")$checked_count +=10;
+        if(!empty($_GET['options3'])) if( $_GET['options3']=="نعم")$checked_count +=5;
+        if(!empty($_GET['options3'])) if( $_GET['options3']=="نعم")$checked_count +=5;
+        if(!empty($_GET['options3'])) if( $_GET['options3']=="نعم")$checked_count +=2;
+        if(!empty($_GET['options3'])) if( $_GET['options3']=="نعم")$checked_count +=2;
+        if(!empty($_GET['options3'])) if( $_GET['options3']=="نعم")$checked_count +=1;
+        $healthResult=$checked_count;
         return $healthResult ;
     }
     // Get Title of Pages

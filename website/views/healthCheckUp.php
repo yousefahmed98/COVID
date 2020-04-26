@@ -8,9 +8,9 @@
 if(isset($_GET['submit'])){
     if(validate())
     {
-        $sick=calc_results();
-        insert_quest();
-        header("Location:checkDone.php?sick=".$sick."");
+        $sickness_value=calc_results();
+        //insert_quest();
+        header("Location:checkDone.php?sickness_value=".$sickness_value."");
     }else{
         echo "<script> alert('Enter All Data'); </script>";
         }
