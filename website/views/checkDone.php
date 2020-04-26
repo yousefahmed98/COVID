@@ -2,8 +2,8 @@
 <?php
     $PageTitle = "أطمن علي صحتك";
     include_once "../init.php";
-    //include_once "navbar.php";
-    debug($_COOKIE["sickness"]);
+    include_once "navbar.php";
+    //debug($_COOKIE["sickness"]);
 ?>
 
 <!--chating part -->
